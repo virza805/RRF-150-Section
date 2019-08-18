@@ -1,0 +1,57 @@
+/* .section-bg {
+    background-image: url(img/Tanvir_Hasan.jpg);
+} */
+.section-padding{
+    position: relative;
+}
+
+.section-bg {
+    background-image: url(img/background.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 59%;
+    background-size: cover;
+}
+.section-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+    content: "";  
+    background: #4a8254;
+    opacity: .8;
+}
+.contact-form {
+    padding: 100px 0 100px 0;
+}
+.contact-form input,
+.contact-form textarea {
+    width:100%;
+    padding:13px;
+    border: 1px solid #fff;
+    margin-bottom: 17px;
+    color: #333;
+}
+.contact-form h2{
+    color: #fff;
+}
+.contact-form input[type="submit"] {
+    width: auto;
+    padding: 15px 30px;
+    color: #4a8254;
+    font-weight: 700;
+}
+.contact-form input:focus {
+    border: 1px solid #333;
+}
+input:focus,
+textarea:focus,
+button:focus{
+    outline: #fff;
+}
+.appointment-text {
+    padding-left: 100px;
+}
