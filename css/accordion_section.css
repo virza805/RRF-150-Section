@@ -1,0 +1,101 @@
+/* FFR 150 Section Video_5 # 19/8/2019 12:47pm # Start Video_5 */
+.v_5_paddind{
+    background-color: #f9fafb;
+    font-size: 15px;
+    line-height:1.7;
+    padding: 50px 0;
+    margin: 05px 0;
+}
+
+.v_5_bg_1{
+    position: relative; 
+}
+.v_5_bg_1::after{
+    background-image: url(../img/v5.jpg);
+    position: absolute;
+    background-size:cover;
+    background-position:center;
+    background-color:#ddd;
+    height:100%;
+    width: 47%;
+    content:"";
+    left: 0;
+    top:0;
+}
+#v_5_title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 35px;
+
+}
+#v_5_title span{
+    color: royalblue;
+
+}
+.styled-faq .card-default > .card-heading{
+    border: none;
+}
+.styled-faq .card-default .card-heading{
+    border: medium none;
+    border-radius: 0;
+    background: none;
+}
+.styled-faq .card-header a {
+    color: #000;
+    text-decoration: none;
+    /* background-color: transparent; */
+    /* padding: 13px; */
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+}
+.styled-faq .card-header a i{
+    float: right;
+    font-size: 125%;
+    display: none;
+    color: #000;
+}
+.styled-faq .card-header a[aria-expanded=true] #up{
+    display: block;
+    color: rgb(18, 128, 14);
+ }
+ .styled-faq .card-header a[aria-expanded=false] #down{
+    display: block;
+    color: rgb(18, 128, 14);
+ }
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color:none; 
+    border-bottom: none;
+    
+}
+.styled-faq .card{
+    margin: 15px 0;
+}
+.styled-faq .card .card-collapse .card-body{
+border: none;
+padding: 15px;
+}
+.styled-faq .card-group .card{
+    box-shadow: 0 0 0;
+    margin-bottom: 15px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.styled-faq h4{
+    margin-bottom: .5rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.styled-faq {
+    min-height: 470px;
+}
+/* FFR 150 Section Video_5 # 19/8/2019 am # End Video_5 */
