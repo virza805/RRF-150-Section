@@ -1,0 +1,98 @@
+/* Base Css */
+@font-face {
+    font-family: 'CodeBold';
+    src: url('../fonts/Code-Bold.eot');
+    src: url('../fonts/Code-Bold.eot') format('embedded-opentype'), url('../fonts/Code-Bold.woff2') format('woff2'), url('../fonts/Code-Bold.woff') format('woff'), url('../fonts/Code-Bold.ttf') format('truetype'), url('../fonts/Code-Bold.svg#codebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'CodeLight';
+    src: url('../fonts/Code-Light.eot');
+    src: url('../fonts/Code-Light.eot') format('embedded-opentype'), url('../fonts/Code-Light.woff2') format('woff2'), url('../fonts/Code-Light.woff') format('woff'), url('../fonts/Code-Light.ttf') format('truetype'), url('../fonts/Code-Light.svg#codelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float:right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display:block;
+    margin:0 auto 15px;
+}
+a:focus{
+    outline: 100%;
+    height: auto;
+}
+h1, h2, h3, h4, h5, h6{
+    margin:0 0 15px;
+    font-weight:normal;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    font-family: 'Karla', sans-serif;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+.homepage-slider-wrap{
+    background-image: url(../img/hero-bg.jpg);
+    background-color:#e9d4cf;
+    background-size: cover;
+    background-position:center;
+
+}
+
+.product-bg-1{background-image: url(../img/lady-1.png)}
+.product-bg-2{background-image: url(../img/lady-2.png)}
+.product-bg-3{background-image: url(../img/lady-3.png)}
+.product-bg-4{background-image: url(../img/lady-4.png)}
+.product-bg-5{background-image: url(../img/lady-5.png)}
+.product-bg-6{background-image: url(../img/lady-6.png)}
+.product-bg-7{background-image: url(../img/lady-7.png)}
+.product-bg-8{background-image: url(../img/lady-8.png)}
+.product-bg-9{background-image: url(../img/lady-9.png)}
+.product-bg-10{background-image: url(../img/lady-10.png)}
+
+/* Header section */
+.header-top-area a.menu-trigger{
+   display:none;
+}
+.header-top-area{
+   color:#5b3f61;
+   font-weight: bold;
+   text-transform:uppercase;
+   font-size: 14px;
+}
+.header-top-area a{
+   color:#5b3f61;
+   text-decoration: none;
+   padding: 15px;
+   display:inline-block;
+   
+}
+.header-left ul{
+    margin:0 ;
+    padding: 0;
+    list-style: onne;
+    
+}
+.header-left ul li{
+    display:inline-block;
+}
+.header-right{
+    text-align: right;
+}
+.header-right img{
+    height: 36px;
+    weight:36px;
+}
+.search-trigger i.fa{
+    padding-left: 10px;
+}
