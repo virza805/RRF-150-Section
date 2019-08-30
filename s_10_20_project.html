@@ -16,13 +16,26 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
   
   
-
-    
+    <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
     <link rel="stylesheet" href="css/style_project.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="carousel.css"> -->
   </head>
   <body>
-    <!-- Start menu section -->
+    <!-- Start menu Off Canvar menu section -->
+    <div id="off-canvar-menu">
+      <span class="menu-close"><i class="fa fa-close"></i></span>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">products</a></li>
+        <li><a href="#">Trend</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="off-canvar-overlay"></div>
+<!-- Start menu section -->
       <section class="header-top-area">
         <div class="container-fluid">
           <div class="row">
@@ -64,6 +77,16 @@
              </div>
            </div>
        </div>
+       <!-- <div class="single-slide-item">
+         <img src="img/women.png" alt="">
+           <div class="slide-text-table">
+             <div class="slider-text-tablecell">
+               <p>Again</p>
+               <p><strong><i>New Seson</i></strong></p>
+               <p class="slide-alternative-color">LOOKS</p>
+             </div>
+           </div>
+       </div> -->
      </div>
    </div>
    <!-- End carolol/ Slider section -->
@@ -80,8 +103,8 @@
      <div class="container">
        <div class="row">
          <div class="col-md-12">
-           <div class="product-list">
-             <div class="single-product-item product-bg-1">
+           <div class="product-list" style="position: relative; height: 1280px; ">
+             <div class="single-product-item product-bg-1" style="position: absolute; left:0px; top: 0px;">
                <div class="product-top-links">
                  <a href=""><i class="fa fa-heart-o"></i></a>
                  <a href=""><i class="fa fa-plus"></i></a>
@@ -346,7 +369,7 @@
    <!-- End after Big-menu / End  section -->
 
 <!-- Start Footer Section -->
-<section>
+<section class="footer-area">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -367,8 +390,8 @@
           <a href="" target="_blank"><i class="fa fa-youtube"></i></a>
         </div>
 
-        <div class="email-surc">
-          <input type="text" placeholder="Get discount codes in your inbox">
+        <div class="email-subscribe-form">
+          <input type="email" placeholder="Get discount codes in your inbox">
           <input type="submit" value="SUBSCRIBE">
         </div>
       </div>
@@ -379,11 +402,6 @@
 
 
 
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -391,6 +409,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <script src="js/jquery-masonry.min.js" ></script>
+    
+    <!-- <script src="js/owl.carousel.min.js" ></script> -->
     <script src="js/style_project.js" ></script>
   </body>
 </html>

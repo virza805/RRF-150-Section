@@ -1,0 +1,42 @@
+  /* Owl carousel / Slider secton top */
+.owl-carousel .owl-item .single-slide-item img{
+    width: auto;
+}
+.homepage-slider-wrap .owl-nav, .homepage-slider-wrap .owl-nav div {
+    height: auto;
+}
+.homepage-slider-wrap .owl-nav div{
+    color:#5b4060;
+    font-size: 20px;
+    left:0;
+    line-height: 40px;
+    margin-top: -20px;
+    opacity:0;
+    position: absolute;
+    top:50%;
+    transition: all 0.3s ease 0s;
+}
+.homepage-slider-wrap .owl-nav div.owl-next{
+    left:auto;
+    right:5%;
+}
+.homepage-slider-wrap:hover .owl-nav div{
+    left:auto;
+    opacity: 1;
+}
+.homepage-slider-wrap:hover .owl-nav div.owl-next{
+   left:auto;
+   right:5%;
+}
+.homepage-slider-wrap .owl-nav div.owl-next{
+   left:auto;
+   right:0;
+}
+ /* Owl carousel / Slider secton top my edite */
+ .owl-stage{
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0s ease 0s;
+    width: auto;
+    height: auto;
+}
+ /* Owl carousel / Slider secton top */
