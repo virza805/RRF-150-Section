@@ -1,0 +1,666 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+a, .link {
+    text-decoration: none;
+}
+a:focus, input:focus, textarea:focus, button:focus{
+    outline: 0 solid;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="submit"], textarea{
+    border: none;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+    font-weight: 400;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    line-height: 1.714;
+    color: #626262;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.img-1 {
+    background-image: url(../img/Tanvir_Hasan.jpg);
+}
+/* FFR 150 Section Video_21 # 31/8/2019 12:56pm Start */
+ .section-padding{
+     margin: 80px 0;
+     font-weight: 400;
+ } 
+.section-padding h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.section-padding p{
+    margin-bottom:80px;
+}
+.single-team-item{
+    border: 1px solid #efefef;
+    margin: 18px 0;
+}
+.team-social-icoms{
+    background: #5ba939;
+    text-align: center;
+    padding:5px;
+    margin: -27px 25px 0 25px;
+    position: relative;
+    z-index: 2;
+}
+.team-social-icoms a{
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    height: 30px;
+    width:30px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.single-team-item img{
+    height: 300px;
+    width:100%;
+}
+.single-team-item h4{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top:10px;
+}
+.single-team-item h4 span{
+    color: #5ba939;
+    display: block;
+    font-weight: 300;
+    font-size: 80%;
+    margin-top: 5px;
+}
+/* FFR 150 Section Video_22 # 31/8/2019 12:56pm End  */
+/* FFR 150 Section Video_23 # 1/9/2019 10:36pm Start  */
+.single-service-box{
+    border: 1px solid #ebebeb;
+    text-align: center;
+}
+.service-box-bg{
+    background: #ddd;
+    height: 200px;
+    position: relative;
+    background-size: cover;
+}
+.service-box-bg h2 {
+    background: #dd5044;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 400;
+    padding: 15px;
+    position: absolute;
+    left: 8%;
+    width: 84%;
+    margin: 0;
+    bottom: -26px;
+}
+.service-box-content {
+    padding: 30px;
+    padding-top: 52px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+.service-box-content p:last-child{
+    margin: 0;
+}
+.service-readmore{
+    display: inline-block;
+    counter-reset: #333;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.service-box-bg-1{background-image: url(../img/Tanvir_Hasan.jpg);}
+.service-box-bg-3{background-image: url(../img/screenshot.jpg);}
+/* FFR 150 Section Video_23 # 1/9/2019 11:47pm End  */
+/* FFR 150 Section Video_24 # 1/9/2019 12:16pm Start  */
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.mainmenu ul li {
+    display:inline-block;
+}
+.mainmenu ul li a{
+    display: block;
+    padding: 25px;
+    padding-right: 0;
+    color: #dedec6;
+    font-size: 16px;
+    padding-left: 68px;
+}
+.homepage-slides{
+    background: #263238;
+}
+.single-slidre-item{
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+}
+.single-slidre-item h2{
+    color: #e3aa34;
+    font-size: 45px;
+    line-height: 58px;
+    font-weight: 300;
+}
+.single-slidre-item .row{
+    position: relative;
+}
+.single-slidre-item .slide-right {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    max-height: 574px;
+}
+.slide-text {
+    margin: 130px 0;
+}
+.bordered-btn{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 12px 30px;
+    margin: 12px 0;
+    font-size: 17px;
+}
+.header-area {
+    position: absolute;
+    left: 0;
+    /* top: 0; */
+    padding: 20px 0;
+    width: 100%;
+    color: #e6e6e5;
+    z-index: 12;
+}
+.logo{
+    max-height: 76px;
+}
+.logo a img {
+    max-height: 76px;
+}
+.slide-text h2{
+    margin-top: 250px;
+}
+/* FFR 150 Section Video_24 # 1/9/2019 11:47pm End  */
+/* FFR 150 Section Video_25 # 1/9/2019 2:14pm Start  */
+.hadin-close {
+    margin: 0 0 100px 0;
+}
+.hadin-close .c_1{
+    background: #5ba939;
+    width: 50px;
+    height: 10px;
+    display: inline-block;
+}
+.hadin-close .c_2{
+    background: #f04a20;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+.hadin-close .c_3{
+    background: #5ba939;
+    width: 50px;
+    height: 10px;
+    display: inline-block;
+}
+.bordered-img{
+    background-image: url(../img/Tanvir_Hasan.jpg);
+    height:120px;
+    width:100%;
+    position:relative;
+    background-size:cover;
+    background-position: center;
+    /* overflow: hidden; */
+    border: 1px solid #fff;
+}
+.bordered-img::after{
+    position:absolute;
+    background:green;
+    right:-6px;
+    bottom:-6px;
+    content:"";
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+.single-feature-item h3 {
+    border-bottom: 1px dashed #6aaf08;
+    padding-bottom: 15px;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    color: #383a38;
+}
+.single-feature-item p {
+    line-height: 1.9;
+    font-size: 16px;
+    color: #656965;
+}
+.right-big-img{
+    background-image:url(../img/screenshot.jpg);
+    height:400px;
+    width:100%;
+    position:relative;
+    background-size:cover;
+    border: 1px solid #fff;
+    margin-left: 30px;
+}
+.right-big-img::after{
+    position:absolute;
+    background:black;
+    content:"";
+    height:100%;
+    width:100%;
+    opacity: 0.5;
+}
+.right-big-img::before{
+    position:absolute;
+    background:green;
+    background-image:url(../img/debut-light.png);
+    left:-10px;
+    bottom:-10px;
+    content:"";
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+/* FFR 150 Section Video_25 # 1/9/2019 8:31pm End  */
+/* FFR 150 Section Video_26 # 1/9/2019 10:00pm Start  */
+.white-box {
+    box-shadow: 0 0 10px #f5f5f5;
+    padding: 30px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact-form input[type="submit"] {
+    width: auto;
+    margin: 0;    background: #52b0fb;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 3px;
+}
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+.colored-box{
+    padding: 30px;    background: #2e77b1;
+    color: #fff;
+    min-height: 458px;
+}
+.colored-box a{
+    color: #fff;
+}
+.colored-box p.contact-info{
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 30px;
+}
+.contact-info i.fa{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-size: 20px;
+}
+.colored-box, .white-box{
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.social-icons a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: #333;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    margin-right: 10px;
+    box-shadow: 0 0 3px #9999;
+    transition: 0.3s;
+}
+.social-icons a:hover{
+    color: #52b0fb;
+}
+/* FFR 150 Section Video_26 # 1/9/2019 12:31pm End  */
+/* FFR 150 Section Video_27 # 1/9/2019 12:48pm End  */
+/* .distans >.row{
+    margin: 50px 0;
+}
+img.time_img {
+    height: 370px;
+    width: 100%;
+}
+.js .cd-h-timeline__container {
+    max-width: 100%;
+}
+
+:root {
+    --cd-color-1: hsl(0, 0%, 22%);
+    --cd-color-2: hsl(207, 95%, 65%);
+    --cd-color-3: hsl(0, 0%, 97%);
+    --font-primary: 'Fira Sans', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+}
+.top-icon ul li a i.fa{
+    color: #52b0fb;
+    font-size: 40px;
+    line-height: 28px;
+    text-align: center;
+}
+.js .cd-h-timeline__navigation {
+   
+    border-color:#f7f7f7;
+    border-color:#f7f7f7;
+}
+
+.text-replace {
+    overflow:inherit;
+    color: transparent;
+    text-indent: 14%;
+    white-space: nowrap;
+}
+.event-detail-info p {
+    font-size: 15px;
+    line-height: 26px;
+}
+.event-detail-info h4 {
+    line-height: 58px;
+    font-weight: 700;
+}
+.event-detail-info {
+    margin: 50px 0 5px 30px;
+}
+.js .cd-h-timeline__event-content {
+    max-width: 100%;
+} */
+/* FFR 150 Section Video_27 # 2/9/2019 12:39pm End  */
+/* FFR 150 Section Video_28 # 2/9/2019 12:39pm start  */
+.footer-area{
+    color: #fff;
+    background: #2e77b1;
+    padding: 80px 0;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.footer-area h3{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer-area, .footer-area > a {
+    color: #fff;
+}
+.footer-wid ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-wid ul li a{
+    color: #fff;
+}
+.footer-subscribtion-form h4{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.footer-subscribtion-form input[type="email"]{
+    border: none;
+    color: #000;
+    padding:10px;
+    width:73%;
+}
+.footer-subscribtion-form input[type="submit"] {
+    border: none;
+    color: #2e77b1;
+    padding: 10px;
+    width: 25%;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.cont-info a{
+    color: #fff;
+}
+.so-links a {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 20px;
+    margin-top: 14px;
+    display: inline-block;
+}
+.so-links a i.fa {
+    color: #fff;
+}
+p.cont-info {
+    position: relative;
+    padding-left: 30px;
+}
+p.cont-info i.fa {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.copyright-area, .copyright-area a {
+    color: #263238;
+}
+.copyright-area ul {
+    list-style: none;
+    text-align: right;
+}
+.copyright-area ul li {
+    display: inline-block;
+    text-align: right;
+}
+.copyright-area ul li::after {
+    content: "|";
+    padding: 0 9px;
+}
+.copyright-area ul li:last-child::after {
+    display: none;
+}
+.copyright-area {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(182, 183, 184);
+    background: #e9eaec;
+}
+/* FFR 150 Section Video_28 # 2/9/2019 11:10pm End  */
+/* FFR 150 Section Video_29 # 2/9/2019 11:10pm Start  */
+.project-bg-1{background-image: url(../img/slider.jpg)}
+.project-bg-2{background-image: url(../img/v5_1.jpg)}
+.project-bg-3{background-image: url(../img/vir.png)}
+.project-bg-4{background-image: url(../img/screenshot.jpg)}
+.project-bg-5{background-image: url(../img/Tanvir_Hasan.jpg)}
+.project-bg-6{background-image: url(../img/Man.png)}
+.project-bg-7{background-image: url(../img/video.jpg)}
+.project-bg-8{background-image: url(../img/v5.jpg)}
+.project-bg-9{background-image: url(../img/v_2.jpg)}
+ul.projects-titles {
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+}
+ul.projects-titles li {
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.single-project-item a, .single-project-item span, .projects-titles li.active {
+    color: #01e9e3;
+}
+.single-project-item {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.row.projects-list .col-md-4:nth-child(2) .single-project-item,
+.row.projects-list .col-md-4:nth-child(4) .single-project-item,
+.row.projects-list .col-md-4:nth-child(6) .single-project-item{
+    height: 615px;
+}
+.row.projects-list .col-md-4 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+.row.projects-list{
+    padding-left: -7.5px;
+    padding-right: -7.5px;
+}
+.project-hover {
+    height:100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.3s;
+}
+/* .single-project-item .project-hover:hover {
+    opacity: 1;
+} */
+.project-hover::after {
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0.6;
+    content:"";
+}
+.project-hover a {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 20px;
+}
+.project-hover h4 {
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    margin: 0;
+    bottom: 30px;
+    left: 30px;
+}
+.project-hover h4 span {
+    display: block;
+    font-size: 80%;
+    margin-top: 10px;
+}
+.single-project-item:hover .project-hover {
+    opacity: 1;
+}
+
+/* FFR 150 Section Video_29 # 3/9/2019 1:35am End  */
+/* FFR 150 Section Video_30 # 3/9/2019 1:50am Start  */
+#section-padding{
+    padding: 100px 0;
+    background-color: #e5e6e7;
+    color:#878787;
+
+}
+#section-padding h1{
+    color:#313131;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 53px;
+}
+.bigger-text{
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+    padding: 70px;
+}
+a.boxed-btn {
+    background: #2e77b1;
+    color: #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin: 30px 0;
+}
+.shadow-gallery{
+    position: relative;
+}
+.shadow-gallery img:nth-child(2), .shadow-gallery img:nth-child(3){
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+.shadow-gallery img{
+    position: relative;
+    z-index: 1;
+    width: 50%
+}
+.shadow-gallery img:nth-child(1){
+    top: -50px;
+     
+}
+.shadow-gallery img:nth-child(2){
+    z-index: 2;
+}
+.shadow-gallery img:nth-child(3){
+    z-index: 3;
+    width: 70%;
+    right: auto;
+    left: -50px;
+    bottom: -80px;
+}
+/* FFR 150 Section Video_30 # 3/9/2019 2:40am End  */

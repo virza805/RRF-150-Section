@@ -1,0 +1,168 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus{
+    outline: 0 solid;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+    font-weight: 400;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    line-height: 1.714;
+    color: #626262;
+}
+.leave_coment_btn, .link{
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 300;
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.img-1 {
+    background-image: url(../img/Tanvir_Hasan.jpg);
+}
+
+.work_img {
+    height: 350px;
+    background-color: #ddd;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+h2{
+    margin-top:30px;
+}
+/* Main Menu */
+.main-menu{
+    margin:0;
+    padding: 0;
+    text-align: right;
+
+}
+.main-menu li{
+    display: inline-block;
+    list-style: none;
+}
+.main-menu li a{
+    display: block;
+    color: #626262;
+    text-transform: uppercase;
+    padding: 70px 0px 0px 68px;
+}
+.logo{
+    padding: 70px 0;
+}
+.slider{
+    width: 100%;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+p{
+    margin: 30px 0;
+}
+.mb-100 a{
+    color: #b4ac9f;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.email_bg {
+    background-color: #ddd;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.load-more-btn{
+    display: inline-block;
+    text-align: center;
+    color: #b4ac9f;
+    padding: 15px 30px;
+    border: 1px solid #b4ac9f;
+    font-size: 20px;
+    text-transform:none;
+}
+.newsletter-area{
+    background: #f0f0f0;
+    padding:70px 0;
+    text-align: center;
+}
+.newsletter-area h2{
+    margin-bottom: 50px;
+}
+.newsletter-form{
+    max-width: 360px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+.newsletter-form input[type="email"]{
+    border: none;
+    background:#f0f0f0;
+    padding:10px;
+    width: 100%;
+}
+.newsletter-form a{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    padding: 10px;
+}
+
+.footer_menu{
+    
+    color:#000;
+
+}
+.footer_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer_bg a{
+    color:#000;
+
+}
+ul {
+    list-style: none;
+}
+#left-footer li{
+    display: inline-block;
+    padding-right: 30px;
+}
+.footer_social_icon a{
+    padding-left: 15px;
+}
+.footer_social_icon{
+    text-align: right;
+}

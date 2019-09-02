@@ -1,0 +1,41 @@
+/* Medium Layout 1280px */
+@media only screen and (min-width:992px) and (max-width:1200px){
+    .main-menu li a{
+         padding: 70px 0px 0px 38px;
+    }
+}
+/*  Tablet Layout: 768px */
+@media only screen and (min-width:768px) and (max-width:991px){
+    .main-menu li a{
+        padding-left:7px;
+   }
+}
+/* Mobile Layout 320px */
+@media only screen and (max-width:767px){
+    .logo {
+        padding: 22px 0;
+        text-align: center;
+    }
+    .main-menu li{
+        padding:3px;
+   }
+    .main-menu li a{
+        padding:20px 0;
+        font-size: 11px;
+   }
+   .main-menu ul{
+       text-align: center;
+   }
+   .mb-100 {
+    margin-bottom: 25px;
+    }
+    .email_bg {
+        padding: 25px;
+        text-align: center;
+    }
+    .footer_social_icon {
+        text-align: center;
+    }
+}
+/* Wide Mobile Layout 480px */
+@media only screen and (min-width:480px) and (max-width:767px){} 
