@@ -30,7 +30,8 @@ a:focus{
 
 h1,h2,h3,h4,h5,h6{
     margin:0 0 15px;
-    font-weight: 400;
+    color: #0e0e0e;
+    font-weight: 700;
 }
 body{
     font-family: 'Playfair Display', serif;
@@ -47,9 +48,950 @@ img{
 ul{
     list-style: none;
 }
-.img-1 {
-    background-image: url(../img/Tanvir_Hasan.jpg);
+
+/* FFR 150 Section Video_31 # 10/9/2019 12:10pm Start  */
+#v_31{
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.8;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.section-bg-1{
+    background-image: url(../img/screenshot.jpg);
+}
+.section-bg-2{
+    background-image: url(../img/slider.jpg);
+}
+html, body, .full-height{
+    height: 100%;
+}
+body{
+    max-height: 100%;
+}
+.section-table{
+    display: table;
+    height: 100%;
+    width:100%;
+}
+.section-tablecell{
+    display: table-cell;
+    vertical-align: middle;
+    width:100%;
+}
+.sectin-padding{
+    padding: 80px 0;
+}
+.full-height{
+    padding: 0;
+}
+.overlay{
+    position: relative;
+    z-index: 1;
+    color:#fff;
+    background-attachment: fixed;
+}
+.overlay::after, .single-service-item::after{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #000;
+    z-index: -1;
+    opacity: .6;
+}
+.single-service-item{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+
+}
+.single-service-item a{
+    color: #fff;
+}
+.single-service-item h2{
+    color: #fff;
+    font-size: 25px;
+}
+#v_31 p{
+    font-size: 15px;
+}
+.service-icon{
+    font-size: 100px;
+    line-height: 120px;
+}
+.video-play-box{
+    text-align: center;
+    color:#fff;
+}
+.video-play-box h2{
+    text-align: center;
+    color:#fff;
+}
+.video-btn{
+    display:inline-block;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    color: #333;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top: 20px;
+}
+/* FFR 150 Section Video_31 # 11/9/2019 12:07am End  */
+/* FFR 150 Section Video_32 # 11/9/2019 10:38pm Start  */
+#v_32{
+    font-family: 'Roboto', sans-serif;
+
+}
+#v_32 h2{
+    color:#fff;
+    font-size:45px;
+    margin-bottom:10px;
+    font-weight:900;
+}
+.promo-bg-1{background:url(../img/Rose.jpg)}
+.promo-bg-2{background:url(../img/Rose2.jpeg)}
+.promo-bg-3{background:url(../img/Rose1.jpg)}
+.single-promo-box{
+    display:block;
+    position: relative;
+    height:280px;
+    background-size:cover;
+    background-position:center;
+    background-color:#333;
+    color:#fff;
+    transition: .3s;
+
+}
+.single-promo-box:hover{
+    transform:scale(1.05);
+    color:#fff;
+    box-shadow:0 0 10px #999;
+}
+.promo-content{
+    text-align: center;
+    font-size:20px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:25px;
+}
+/* FFR 150 Section Video_32 # 12/9/2019 8:17am End  */
+/* FFR 150 Section Video_33 # 12/9/2019 8:65am Start  */
+.fullwidth-bg-area{
+    background:url(../img/v_2.jpg);
+    background-size:cover;
+    background-position:center;
+    margin:70px 0;
+}
+.margin-minus{
+    margin: -68px 0;
+    padding:120px 70px;
+    font-size:18px;
+    line-height: 1.9;
+}
+.margin-minus h2{
+    color:#fff;
+    font-size:50px;
+    font-weight: 400;
+}
+.author-name::before{
+    background: #fff;
+    content: "";
+    height: 2px;
+    width: 30px;
+    left:0;
+    top:50%;
+    margin-top:-2px;
+    position: absolute;
+}
+.author-name{
+    margin:30px 0;
+    font-size: 24px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; 
+    padding-left:45px;
+}
+.author-name span{
+    font-size: 72%;
+    position: relative;
+    font-weight: 300;
+    opacity: 0.4;
+}
+.dark-bg{
+    background-color:#2b2f40;
+    color:#fff;
+    /* opacity: 0.9;
+    background-color: rgba(43, 47, 64, 0.9803921568627451);
+         */
+}
+.bordered-btn{
+    display: inline-block;
+    color:#fff;
+    border: 2px solid #cca876;
+    padding: 10px 40px;
+
+}
+.boxed-content{
+    position: relative;
+    padding: 30px 0 30px 20px;
+}
+.boxed-content::before{
+    position: absolute;
+    left: -40px;
+    top:0;
+    width: 50px;
+    height: 50px;
+    content: "";
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.boxed-content::after{
+    position: absolute;
+    right: -70px;
+    bottom:0;
+    width: 50px;
+    height: 50px;
+    content: "";
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.margin-minus .bordered-btn{
+    margin-left: 20px;
 }
 
-/* FFR 150 Section Video_31 # 3/9/2019 11:10pm Start  */
-/* FFR 150 Section Video_31 # 3/9/2019 3:07pm End  */
+/* FFR 150 Section Video_33 # 12/9/2019 11:37am End  */
+/* FFR 150 Section Video_34 # 12/9/2019 11:44am Start  */
+.single-slide-item{
+    background-image: url(../img/Rose2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color:#ddd;
+    height: 650px;
+    margin-bottom:200px;
+    position: relative;
+}
+.slide-text-area{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width:100%;
+}
+.slide-text{
+    background:#2185c5;
+    color:#fff;
+    padding:60px 150px 60px 0;
+    font-size:20px;
+    line-height: 1.8;
+    position: relative;
+}
+.slide-text::before{
+    position: absolute;
+    left: -1000%;
+    top:0;
+    height: 100%;
+    width: 1000%;
+    background: #2185c5;
+    content: "";
+}
+.slide-text::after{
+    position: absolute;
+    right:-35px;
+    top:50px;
+    height: 70px;
+    width: 70px;
+    background: #2185c5;
+    content: "";
+    transform:rotate(45deg);
+}
+.slide-text h2, .slide-text a{
+    color:#fff;
+}
+.slide-text h2{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.boxed-btn{
+    display: inline-block;
+    background:#333;
+    font-size:14px;
+    text-transform: uppercase;
+    padding:16px 30px;
+    margin-top:35px;
+}
+/**************** practies to tasks *************/
+.slide-text_a h2, .slide-text_a a{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.slide-text_a h2{
+    font-size: 50px;
+}
+.slide-text_a{
+    color:#fff;
+    padding:60px 150px 60px 0;
+    font-size:20px;
+    line-height: 1.8;
+    position: relative;
+    z-index:4;
+}
+.slide-text_a::before{
+    position: absolute;
+    left: -1000%;
+    top:0;
+    height: 100%;
+    width: 1000%;
+    background: #2185c5;
+    content: "";
+    opacity: 0.8;
+}
+.slide-text_a::after{
+    background:#2185c5;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+    opacity: 0.8;
+}
+.arrow_right{
+    position: absolute;
+    right:-35px;
+    top:50px;
+    height: 70px;
+    width: 70px;
+    background: #2185c5;
+    content: "";
+    transform:rotate(45deg);
+    opacity: 0.8;
+}
+/* FFR 150 Section Video_34 # 12/9/2019 5:27pm End  */
+/* FFR 150 Section Video_35 # 12/9/2019 5:27pm Start */
+#v_35{
+    color: #bbbec0;
+    font-family: 'Roboto', sans-serif;
+    line-height:1.7;
+    font-size: 13px;
+    margin-bottom:80px; 
+}
+#v_35 h3{
+    color: #fff;
+    text-transform: uppercase;
+}
+#v_35 .section-padding{
+    position: relative;
+    z-index: 1;
+}
+.section-absolute-bg{
+    background-image: url(../img/background.jpg);
+    position: absolute;
+    right: 0;
+    top:0;
+    width:50%;
+    height: 100%;
+    background-size: cover;
+    background-position:center;
+    background-color:#0e0e0e;
+    z-index: 2;
+}
+.section-absolute-bg::after{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    background-color:#000000;
+    z-index: -2;
+    content:"";
+    opacity:0.3;
+}
+.absolute-bg-left .section-absolute-bg{
+    right: auto;
+    left:0;
+}
+.absolute-bg-2{background-image: url(../img/video.jpg)}
+#v_35 .section-padding{
+    background-color: #222931;
+    padding: 80px 0;
+}
+#v_35 .bordered-btn{
+    text-transform: uppercase;
+    margin-top: 21px;
+    border-color: #ddd;
+}
+#v_35 .boxed-contentt{
+    position: relative;
+    padding-left: 40px;
+    padding-right:50px;
+}
+#v_35 .absolute-bg-left .boxed-contentt{
+    margin-left: 80px;
+    padding-right:0;
+}
+#v_35 .boxed-contentt::before{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100px;
+    width:1px;
+    content:"";
+    background-color:#70747a;
+}
+/* https://css-tricks.com/the-shapes-of-css/ */
+#triangle-right {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right:-104px;
+    border-top: 25px solid transparent;
+    border-left: 100px solid #222931;
+    border-bottom: 25px solid transparent;
+    z-index: 8;
+
+  }
+#triangle-left{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left:-188px;
+    border-top: 25px solid transparent;
+    border-right: 100px solid #222931;
+    border-bottom: 25px solid transparent;
+    z-index: 8;
+  }/* https://css-tricks.com/the-shapes-of-css/ */
+
+/* FFR 150 Section Video_35 # 12/9/2019 9:29pm End  */
+/* FFR 150 Section Video_35 # 12/9/2019 9:29pm Start  */
+#v_36 h2,h3,h4{
+    /* color:#fff; */
+}
+#v_36{
+    background-color: #f5f6fa;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+.promo-boxes-wrap{
+    margin-left:-15px;
+    overflow: hidden;
+}
+.single-promo-boxs{
+    height:350px;
+    width:50%;
+    float: left;
+    display: table;
+    text-align: center;
+    background:#fff;
+}
+#v_36 .single-promo-boxs:hover .boxed-btn{
+    opacity: 1;
+    visibility: visible;
+}
+#v_36 .single-promo-boxs:hover .dox-tablecell{
+    padding-top: 0;
+}
+.dox-tablecell{
+    display:table-cell;
+    vertical-align: middle;
+    padding-top: 70px;
+    transition: 0.3s;
+}
+.single-promo-boxs:nth-child(2){
+    background: #b64a18;
+    color: #fff;
+}
+.single-promo-boxs:nth-child(3) h2::after, .single-promo-boxs:nth-child(2) h2::after{
+    
+    background: #fff;
+}
+.single-promo-boxs:nth-child(3) .boxed-btn, .single-promo-boxs:nth-child(2) .boxed-btn{
+    
+    background: #fff;
+    color: #000000 !important;
+}
+.single-promo-boxs:nth-child(3) h2, .single-promo-boxs:nth-child(2) h2{
+    color: #fff;
+}
+.single-promo-boxs:nth-child(3){
+    background: #7dbace;
+    color: #fff;
+}
+.promo_icon::before{
+    font-size: 70px;
+}
+.promo_icon{
+    margin-top: -18px;
+    display: inline-block;
+}
+#v_36 .boxed-btn{
+    color: #fff;
+    padding:15px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.single-promo-boxs h2{
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.single-promo-boxs h2::after{
+    
+    position: absolute;
+    left:50%;
+    height: 2px;
+    width: 50px;
+    margin-left:-25px;
+    content: "";
+    background: #d8889b;
+    bottom:0; 
+}
+#v_36 .secton-btns .boxed-btn{
+    opacity: 1;
+    visibility: visible;
+    background-color: #7dbace;
+}
+#v_36 .secton-btns .bordered-btn{
+    border-radius: 50px;
+    color:#000;
+    padding:12px 30px;
+    border-color: #7dbace;
+    margin-left:20px;
+}
+#v_36 .right-side-content h2{
+    font-weight: 900;
+    font-size: 35px;
+}
+#v_36 .right-side-content{
+    line-height: 1.9;
+    font-size: 15px;
+    padding: 160px 45px;
+}
+/* FFR 150 Section Video_36 # 15/9/2019 9:39pm End  */
+/* FFR 150 Section Video_37 # 15/9/2019 9:55pm Start  */
+#v_37{
+    font-family: 'Roboto', sans-serif;
+    padding: 80px 0;
+}
+.team-bg1 {
+    background-image: url(../img/profil_pick.jpg);
+    height: 270px;
+    background-size: cover;
+    background-position: center top;
+    margin-bottom: 40px;
+}
+.bgA{background-image: url(../img/profil_ca.jpg)}
+.bgB{background-image: url(../img/p-cam.jpg)}
+
+.title-section{
+    position: relative;
+    text-transform:uppercase;
+    text-align: 32px;
+    font-weight: 900;
+    transform:rotate(270deg);
+    margin-top: 50px;
+}
+.title-section::before{
+    position: absolute;
+    top: -25px;
+    right:0;
+    height: 1px;
+    width:70%;
+    content: "";
+    background: #0e0e0e;
+}
+#v_37 .borded-content{
+    border: 1px solid #0e0e0e;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+#v_37 .borded-content h3{
+    font-size: 20px;
+    background: #fff;
+    display:inline-block;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+#v_37 .team_title{
+    margin-top:-11px;
+}
+#v_37 .col-md-4:nth-child(2) .single-team-memberA{
+    margin-top: 100px;
+}
+/* FFR 150 Section Video_37 # 15/9/2019 11:03pm End  */
+/* FFR 150 Section Video_38 # 15/9/2019 11:31pm start  */
+#v_38{
+    margin: 100px 0;
+    position: relative;
+}
+#v_38 .single_slide_item{
+    background-image: url(../img/plate-food.jpg)
+}
+.logoss img {
+    max-width: 100px;
+    float: left;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.logoss{
+    color:#333;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    padding-left:120px;
+    padding-top:13px;
+    padding-bottom:13px;
+}
+.logoss span{
+    font-style: italic;
+    font-size: 80%;
+    font-weight: 300;
+    display: block;
+}
+p.right-contact-box {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 30px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+p.right-contact-box i.fa {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 30px;
+}
+.right-contact-box{
+    color:#333;
+}
+#v_38 .header_area{
+    padding: 25px 0;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    z-index: 99;
+}
+#v_38 .single_slide_item{
+    padding-top: 180px;
+    padding-bottom:100px;
+    background-size: cover;
+    background-position: center;
+    background-color: #70747a;
+}
+#v_38 .slide_text{
+    position: relative;
+    z-index: 1;
+}
+#v_38 .slide_text::after{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: #fff;
+    content: "";
+}
+#v_38 .slide_text .boxed_btn{
+    margin-top: 30px;
+}
+#v_38 .boxed_btn {
+    background: #ef800d;
+    color: #fff;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 3px;
+}
+#v_38 .slide_text h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+#v_38 .slide_text {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    padding: 50px 70px;
+}
+/* FFR 150 Section Video_38 # 16/9/2019 1:14pm End But Carosel Active na  */
+/* FFR 150 Section Video_39 # 17/9/2019 1:14pm Start But Carosel Active na  */
+#v_39{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom:40px;
+    
+}
+.gradient-overlay-wrapper{background-image: url(../img/bright-paint-strokes.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index:1;
+}
+.gradient-overlay-wrapper::after{
+    background: #293fce;
+background: -moz-linear-gradient(-45deg,  #293fce 0%, #8d00ce 40%, #d6684d 100%);
+background: -webkit-linear-gradient(-45deg,  #293fce 0%,#8d00ce 40%,#d6684d 100%);
+background: linear-gradient(135deg,  #293fce 0%,#8d00ce 40%,#d6684d 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#293fce', endColorstr='#d6684d',GradientType=1 );
+/* https://www.colorzilla.com/gradient-editor/ */
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    content: "";
+    z-index: -1;
+    opacity: .9;
+}
+.logov img{
+    max-width:165px;
+    max-height: 100px;
+}
+.mainmenuv ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-align: right;
+}
+.mainmenuv ul li{
+    display: inline-block;
+}
+.mainmenuv ul li a{
+    color:#fff;
+    opacity: 0.5;
+    display: block;
+    font-size: 16px;
+    padding:38px;
+}
+.mainmenuv ul li:hover a{
+    color:#fff;
+    opacity: 1;
+    font-size: 17px;
+    font-weight:700;
+}
+.header-areav{
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+}
+.header-areav::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height:1px;
+    width: 100%;
+    content:"";
+    background-color: #fff;
+    opacity: 0.2;
+}
+/* .hero_buttons{
+    position: relative;
+} */
+.mobile-screen{
+    position: absolute;
+    right:0;
+    bottom:0;
+    max-height: 690px;
+}
+.hero-text{
+    max-width:450px;
+    color: #fff;
+    font-size:17px;
+    line-height: 1.8;
+    padding: 150px 0;
+}
+#v_39 .hero-text h1{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1.3;
+    padding-bottom:40px;
+}
+#v_39 .hero-text p{
+    opacity: 0.6;
+}
+.hero_buttons{
+    margin: 50px 5px;
+}
+.hero_buttons a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size:13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding:14px 35px;
+    border-radius:50px;
+    display: inline-block;
+}
+.hero_buttons .bordered-btn{
+    border: 1px solid #fff;
+}
+.hero_buttons .underline-btn{
+    /* border-bottom: 1px solid #fff; */
+    text-decoration: underline;
+}
+/* FFR 150 Section Video_39 # 17/9/2019 6:14pm End But Carosel Active na  */
+/* FFR 150 Section Video_40 # 18/9/2019 6:14pm Start */
+#v_40{
+    margin: 40px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.vl_section-bg-1{
+    background-image: url(../img/blue-sky.jpg);
+}
+.ctionse-padding{
+    position: relative;
+    background-size: cover;
+    background-position: center top;
+    padding: 100px 0;
+}
+.price-boxess{
+    box-shadow: 0 0 30px #333;
+    overflow: hidden;
+}
+#v_40 .single-price-box{
+    float:left;
+    width: 33.33333%;
+    position: relative;
+    z-index:1;
+}
+#v_40 .single-price-box::after{
+    position: absolute;
+    right:0;
+    top:0;
+    width:1px;
+    height: 100%;
+    content:"";
+    background:#333;
+    opacity:0.3;
+}
+#v_40 .single-price-box:last-child::after{
+    display: none;
+}
+.price-boxs-img img{
+    max-width: 180px;
+    max-height: 165px;
+}
+.price-boxs-img{
+    display: table;
+    width: 100%;
+    height: 175px;
+}
+.price-boxs-img-wrap{
+    display: table-cell;
+    vertical-align: middle;
+    width:100%;
+    text-align: center;
+}
+.price-box-inner{
+    background:#fff;
+    padding:30px;
+    color: #3c76c0;
+    text-align:center;
+}
+.price-box-inner h2{
+    text-align: center;
+    font-weight:700;
+    color: #3c76c0;
+    text-transform:uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+.price-box-inner h2::after{
+    position: absolute;
+    top: 41px;
+    bottom: 0;
+    left: 42%;
+    width:15px;
+    height: 4px;
+    content:"";
+    background:#3c76c0;
+    z-index:-1;
+}
+.price-box-inner h3 span{
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    color: #ce4c00;
+    font-size:40px;
+}
+.price-box-inner h3 span::before{
+    content: "$";
+    position: absolute;
+    font-weight: 400;
+    font-size: 24px;
+    left: -21px;
+    top:-2px;
+}
+.price-box-inner h3 span::after{
+    content: "/mo";
+    font-weight: 400;
+    font-size:23px;
+    margin-left:5px;
+}
+.price-box-inner h3{
+    text-align: center;
+    padding-left: 17px;
+}
+.price-box-inner ul{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    padding-left: 23px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom:30px;
+    text-align:left;
+}
+.price-box-inner ul li strong{
+    padding-right: 4px;
+}
+.price-box-inner .boxsd-btn{
+    background-color: #3c76c0;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.price-box-inner .boxsd-btn:hover, .price-box-inner .boxsd-btn.active:hover{
+    background-color: #ce4c00;
+    color:#fff;
+    
+}
+.price-box-inner .boxsd-btn.active{
+    background-color: #bc09c2;
+    
+}
+#v_40 .ctionse-padding.vl_section-bg-1{
+    background-attachment: fixed;
+}
+/* FFR 150 Section Video_40 # 19/9/2019 2:16am End   */
