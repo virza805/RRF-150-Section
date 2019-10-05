@@ -32,7 +32,12 @@ h1,h2,h3,h4,h5,h6{
     margin:0 0 15px;
     font-weight: 400;
 }
-body{
+body{/* 
+    font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
+*/
     font-family: 'Playfair Display', serif;
     line-height: 1.714;
     color: #626262;
@@ -43,10 +48,72 @@ a, a:hover{
 ul{
     list-style: none;
 }
-/* 
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
-
 /* FFR 150 Section Video_41 # 19/9/2019 2:25am Start  */
+#v_41{
+    background:#ecebf0;
+    margin:40px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.secton-padding{
+    padding: 80px 0;
+}
+.colored-bg{
+    background-color: #79d4d9;
+    color:#fff;
+    position: relative;
+}
+.lady-img{
+    position: absolute;
+    right:-34px;
+    bottom: 0;
+}
+.slide-text{
+    padding-left:100px;
+    max-width: 530px;
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 100px;
+    padding-top: 71px;
+    min-height: 679px;
+}
+.slide-text .boxed-btn{
+    margin-top: 30px;
+}
+p.top-ticker-text {
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    
+}
+p.top-ticker-text::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    content: "";
+}
+.slide-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    margin-top: 51px;
+    margin-bottom: 60px;
+}
+#v_41 .boxed-btn{
+    display: inline-block;
+    background: #f5f45e;
+    color:#fff;
+    text-transform: uppercase;
+    font-size:15px;
+    padding: 10px 30px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 10px 60px #f5f45e;
+}
+/* FFR 150 Section Video_41 # 20/9/2019 8:35m End  */
+/* FFR 150 Section Video_41 # 19/9/2019 2:25am Start  */
+
 /* FFR 150 Section Video_41 # 19/9/2019 3:07pm End  */

@@ -33,6 +33,11 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 400;
 }
 body{
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif; */
+    
     font-family: 'Playfair Display', serif;
     line-height: 1.714;
     color: #626262;
