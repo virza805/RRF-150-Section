@@ -1,0 +1,27 @@
+#bg_news{
+    background-color: #0e1933;
+}
+#bg_news h3{
+    display: inline-block;
+    color: #fff;
+    padding: 8px 30px;
+    z-index: 4;
+    background-color: green;
+    margin-bottom: 0;
+}
+#bg_news marquee{
+    color: #fff;
+    z-index: 5;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+}
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 500px;
+  }
+  .carousel-caption{
+    background-color:#00000042;
+  }
