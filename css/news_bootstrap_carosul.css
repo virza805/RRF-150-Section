@@ -17,11 +17,21 @@
     top: 0;
 }
 
-  /* Make the image fully responsive */
+  /* Start Make the image of Carosul slider fully responsive */
   .carousel-inner img {
     width: 100%;
     height: 500px;
   }
   .carousel-caption{
     background-color:#00000042;
+  }
+  /* End Make the image of Carosul slider fully responsive */
+
+  /* Full width image */
+  #sbgs_img img{
+    width:100%;
+    height: auto;
+  }
+  #sbgs_img h2{
+    margin: 15px;
   }
