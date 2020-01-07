@@ -45,6 +45,7 @@ body{/*
 }
 a, a:hover{
     text-decoration: none;
+   
 }
 ul{
     list-style: none;
@@ -389,4 +390,583 @@ a.scroll-top-about {
     content: "";
     top: -4px;
 }
-/* FFR 150 Section Video_43 # 17/12/2019 11:17pm End  */
+#v_43 h1 b a{color: #07f107;}
+/* RRF 150 Section Video_43 # 17/12/2019 11:17pm End  */
+/* RRF 150 Section Video_45 # 4/1/2020 8:00am Strt Now  */
+#v_45{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6c7b8a;
+    font-family: 'Roboto', sans-serif;
+}
+#v_45 a{
+    color: #14abf4;
+}
+.section-padding45{
+    padding: 80px 0;
+}
+.single-price-box45{
+    border: 1px solid #f4f7fa;
+    border-radius: 4px;
+    padding:50px;
+    margin-bottom:50px;
+    text-align:center;
+    transition: .3s;
+}
+.single-price-box45:hover{
+    box-shadow:0 0 40px #f2f5f6;
+}
+.single-price-box45 h4{
+    margin-bottom:40px;
+    font-size:20px;
+}
+.pricing-amount45{
+    font-size: 60px;
+    font-weight: 300;
+    color: #14abf4;
+    line-height:70px;
+    margin-bottom:0;
+}
+.pricing-box-content45{
+    margin-top: 30px;
+    border-top:1px solid #f1f5fa;
+    padding-top:30px;
+}
+.pricing-box-content45 ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.pricing-box-content45 li{
+    padding-bottom:13px;
+    line-height: 1.4;
+}
+#v_45 .boxed-btn{
+    background-color: #14abf4;
+    color:#fff;
+    padding:15px 50px;
+    display:inline-block;
+    border-radius:5px;
+    margin-top:20px;
+    transition:.3s;
+}
+#v_45 .boxed-btn:hover{
+    background-color: #333;
+    color:#fff;
+    font-weight: 700;
+}
+.single-price-box45 h4 span{
+    display: block;
+    color:#93cb72;
+    font-size: 85%;
+    font-weight:400;
+    margin-top:10px;
+}
+.single-price-box45.active h4{
+    margin-top:-15px;
+    margin-bottom:25px;
+}
+.single-price-box45.active{
+    position:relative;
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+    /* box-shadow:0 0 40px #f2f5f6; */
+}
+.single-price-box45.active::before{
+    position: absolute;
+    left:0;
+    top:0;
+    height:3px;
+    width:100%;
+    background-color:#67b930;
+    content: "";
+}
+/* RRF 150 Section Video_45 # 4/1/2020 8:47am End  */
+/* RRF 150 Section Video_46 # 4/1/2020 8:47am Start  */
+.section-padding46{
+    padding: 100px 0;
+}
+.dark-bg{
+    background-color: #343434;
+    color:#a5a5a5;
+}
+.trailor-text{
+    font-size: 16px;
+    line-height: 1.7;
+    padding-top:50px;
+}
+.trailor-text h2{
+    font-size: 30px;
+    color: #fff;
+    line-height: 58px;
+    text-transform: uppercase;
+    margin-bottom:25px;
+    position: relative;
+    z-index:1;
+    font-weight: 700;
+}
+.trailor-text h2::after{
+    position: absolute;
+    z-index:2;
+    height: 3px;
+    background-color:red;
+    width: 15%;
+    content: "";
+    left: 0;
+    bottom: -8px;
+}
+.bordered-btn{
+    border: 2px solid #ff5151;
+    color: #fff;
+    text-transform:uppercase;
+    font-size:12px;
+    font-family: 'Oavald', sans-serif;
+    padding: 8px 50px 8px 15px;
+    width:150px;
+    margin-top: 30px;
+    position: relative;
+}
+.bordered-btn i.fa{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.trailor-info{
+    position: relative;
+    text-align:right;
+}
+.colroed-pricing-box{
+    position: absolute;
+    right:120px;
+    background-color:#ff5151;
+    text-align:center;
+    color:#fff;
+    text-transform: uppercase;
+    width:200px;
+    padding-top:50px;
+    height: 300px;
+    top:-40px;
+}
+.colroed-pricing-box p{
+    opacity: .6;
+}
+.colroed-pricing-box p.price_text{
+    opacity: 1;
+    color: #fff;
+    font-family: 'Oavald', sans-serif;
+    font-size:30px;
+}
+.absolute-shopping-cart{
+    position:absolute;
+    left:-25px;
+    top:65px;
+    width:50px;
+    height: 50px;
+    background-color: #fff;
+    color:#333;
+    line-height: 50px;
+    font-size:16px;
+    box-shadow:0 0 10px #666;
+}
+.trailor-info img{
+    position: relative;
+    z-index: 1;
+    padding-top:100px;
+}
+div.owl-carousel .owl-item .trailor-info img{
+    /* width:auto; */
+    display:inline-block;
+}
+.featured-trailors-carousel .owl-dots button:nth-child(1) span::before{content:"01"}
+.featured-trailors-carousel .owl-dots button:nth-child(2) span::before{content:"02"}
+.featured-trailors-carousel .owl-dots button:nth-child(3) span::before{content:"03"}
+
+.featured-trailors-carousel .owl-dots button span{
+    border-left: 2px solid #444;
+    padding:20px 10px;
+}
+.featured-trailors-carousel .owl-dots button.active span{
+    border-left: 2px solid #ff5151;
+}
+.featured-trailors-carousel .owl-dots button{
+    display: block;
+}
+.featured-trailors-carousel .owl-dots{
+    position: absolute;
+    right:-100px;
+    top: 20%;
+}
+/* RRF 150 Section Video_46 # 4/1/2020 4:13pm End  */
+/* RRF 150 Section Video_47 # 4/1/2020 5:05pm Start */
+.testimonial-bg{
+    background-image: url(../img/v_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-bg::before{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    opacity:.8;
+    background-color: rgb(26, 24, 24);
+    color: #fff;
+    z-index: 2;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.user-avatar img{
+    max-width: 100px;
+    border-radius: 50% 50%;
+    margin: 0 auto;
+}
+.user-avatar{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.testimonial-content{
+    font-size: 18px;
+    line-height: 32px;
+    font-style:italic;
+    text-align: center;
+}
+.single-testmonial-item h4{
+    opacity: .8;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.single-testmonial-item h4 span{
+    display: block;
+    font-weight: 400;
+    font-size: 80%;
+    margin-top: 9px;
+}
+.single-testmonial-item .owl-dots button span{
+    height: 15px;
+    width: 15px;
+    display:inline-block;
+    background:#2c4450;
+    /* z-index: 9; */
+}
+.testimonaial-carousel{
+    z-index: 5;
+}
+#v_47 button.owl-dot {
+    background: #2c4450;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+#v_47 button.owl-dot.active {
+    background: #fff;
+    /* color: green; */
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* padding-left: 30px; */
+    margin-left: 7px;
+}
+#v_47 .owl-dots {
+    text-align: center;
+    margin-top:40px;
+}
+#v_47 .testimonaial-carousel{position: relative;}
+#v_47 .testimonaial-carousel::before, #v_47 .testimonaial-carousel::after {
+    font-family: 'FontAwesome';
+    position: absolute;
+    font-size: 30px;
+}
+#v_47 .testimonaial-carousel::before{
+    content: "\f10d";
+    left:-50px;
+    top: 127px;
+}
+#v_47 .testimonaial-carousel::after{
+    content: "\f10e";
+    right:-50px;
+    bottom: 127px;
+}
+/* RRF 150 Section Video_47 # 4/1/2020 11:28pm End  */
+/* RRF 150 Section Video_48 # 6/1/2020 4:58pm Start  */
+#v_48{
+    color: #737678;
+    font-size:17px;
+    line-height: 1.7;
+}
+.sectin-padding{
+    padding:100px 0;
+}
+.prcing-tables48{
+    overflow: hidden;
+    padding: 30px 20px;
+}
+.single-pricing-box48{
+    float: left;
+    width:33.3333%;
+    box-shadow:0 0 10px #f3f3f3;
+    position: relative;
+    z-index:1;
+    background:#fff;
+    margin-top: 30px;
+}
+.pricing_heading{
+    background-color: #f9f9f9;
+    color:#898888;
+    font-size: 17px;
+    padding:60px;
+}
+.pricing_heading h4{
+    color: #888888;
+    font-size: 30px;
+    font-weight:400;
+}
+.pricing_heading h1{
+    color: #333;
+    font-size: 50px;
+    font-weight:400;
+}
+.pricing_content{
+    padding:40px;
+}
+.pricing_content ul{
+    line-height:35px;
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+.pricing_btn{
+    display: inline-block;
+    border: 2px solid #f91942;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-weight:600;
+    color: #f91942;
+}
+/* Active pricing Box CSS */
+.active .pricing_heading{
+    color:#fff;
+    background-color: #f91942;
+    margin-top:0;
+}
+.active .pricing_heading h1{
+    color:#fff;
+}
+.active .pricing_heading h4{
+    color:#fff;
+}
+.single-pricing-box48.active{
+    position: relative;
+    z-index: 2;
+    margin-left: -.5%;
+    margin-right: -.5%;
+    width:34.333%;
+    overflow: hidden;
+    margin-top: 0;
+}
+.active .pricing_heading{
+    overflow: hidden;
+}
+.active .pricing_heading::after{
+    content:"Featured";
+    position: absolute;
+    right:-40px;
+    top: 20px;
+    color:#f91942;
+    background-color: #fff;
+    transform:rotate(45deg);
+    font-size:14px;
+    padding: 5px 50px;
+}
+
+.active .pricing_content{
+    padding: 60px 60px;
+}
+.active .pricing_content .pricing_btn{
+    color:#fff;
+    background-color: #f91942;
+}
+/* RRF 150 Section Video_48 # 6/1/2020 11:30pm End  */
+/* RRF 150 Section Video_49 # 7/1/2020 7:21am Start  */
+#v_49{
+    font-size: 16px;
+    line-height: 2;
+}
+#v_49 .sectin-padding{
+    padding:100px 0;
+    margin-bottom: 80px;
+}
+/* #v_49 .contens-tab{
+    position: relative;
+}
+#v_49 .tab-content{
+    position: absolute;
+    top:80px;
+    max-height: 500px;
+} */
+.tab-list{
+    border-bottom:2px solid #333;
+    margin: 0 0 30px;
+    padding:0;
+}
+.tab-list li{
+    display:inline-block;
+}
+.tab-list li a{
+    display:block;
+    padding:10px 18px;
+    position: relative;
+    color:#666;
+}
+.tab-list li.active a{
+    color:red;
+}
+.tab-list li.active a::after{
+    position: absolute;
+    left:0;
+    bottom:-2px;
+    background-color:red;
+    content: "";
+    height: 2px;
+    width:100%;
+    z-index: 2;
+}/*:End Tabs*/
+/* RRF 150 Section Video_49 # 7/1/2020 9:09m End  */
+/* RRF 150 Section Video_50 # 7/1/2020 9:31m start  */
+#v_50{
+    font-family: 'Roboto', sans-serif;
+}
+.sec-padding{
+    padding:100px 0;
+}
+.list-bg1{background-image: url(../img/love.jpg);}
+.list-bg2{background-image: url(../img/Tanvir_Hasan.jpg);}
+.list-bg3{background-image: url(../img/women.png);}
+.list-bg4{background-image: url(../img/profil_pick.jpg);}
+.list-bg5{background-image: url(../img/profil_ca.jpg);}
+.list-bg6{background-image: url(../img/p-cam.jpg);}
+.list-bg7{background-image: url(../img/r.png);}
+
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.section-title h2{
+    font-size: 40px;
+}
+.single-list-box{
+    height: 350px;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+    background-color: #666;
+    border-radius: 5px;
+    z-index: 1;
+}
+.single-list-box::after{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left:0;
+    bottom: 0;
+    content: "";
+    background-color: #333;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: .4;
+}
+.listing-hover{
+    position: absolute;
+    left:10%;
+    width:80%;
+    bottom: 40px;
+    color:#ddd;
+    font-size: 18px;
+}
+.listing-hover h3{
+    font-size: 25px;
+    color:#fff;
+    font-weight: 400;
+}
+.border_btn50{
+    border:1px solid #fff;
+    color:#fff;
+    display:inline-block;
+    padding:10px 25px;
+    border-radius: 50px;
+    margin-top:10px;
+}
+.listing-carousel .owl-nav button i.fa{
+    position: absolute;
+    left:-20px;
+    top:50%;
+    font-size: 40px;
+    opacity: .5;
+    line-height: 60px;
+    margin-top: -70px;
+    z-index: 7;
+}
+.listing-carousel .owl-nav button.owl-next i.fa{
+    right: -20px;
+    left:auto;
+}
+.listing-carousel.owl-carousel.owl-loaded.owl-drag .owl-stage-outer {
+    overflow: inherit;
+}
+.sec-padding.listing-carousel-wrapper {
+    overflow-x: hidden;
+}
+.listing-carousel{
+    position:relative;
+}
+.listing-carousel::before, .listing-carousel::after{
+    position: absolute;
+    left:-500%;
+    top:0;
+    width:500%;
+    height: 100%;
+    content: "";
+    background:#fff;
+    z-index: 1;
+    opacity: .7;
+}
+.listing-carousel::after{
+    left:auto;
+    right:-500%;
+}
+.listing-carousel .owl-dots{
+    text-align: center;
+    margin-top:20px;
+}
+.listing-carousel .owl-dots button span{
+    height: 15px;
+    width: 15px;
+    display:inline-block;
+    border:2px solid #bfbfbf;
+    border-radius: 50%;
+    margin:5px;
+}
+.listing-carousel .owl-dot.active span{
+    background:  #bfbfbf;
+
+}
+/* RRF 150 Section Video_50 # 7/1/2020 11:43am End  */
+

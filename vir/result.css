@@ -1,0 +1,57 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.under_line{
+	border-bottom: 2px solid green;
+	padding-top: 5px;
+}
+h1,h6{
+	
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+h6, p{
+  margin: 0;
+  padding: 0;
+}
+div#logo {
+  background-color: #00a651;
+  font-family: 'PT Serif', serif;
+  font-size: 31px;
+  color: #fff;
+  display: inline-block;
+  padding: 3px 30px 3px 0px;
+  margin: 15px 0px;
+  font-weight: 700;
+  max-height: 100px;
+  /* width: 50%; */
+}
+div#logo span {
+  background-color: #ed1c24;
+  height: 100%;
+  padding: 5px 15px 6px 30px;
+}
+.col-sm-4.mar_mains {
+  margin-top: -65px;
+  
+}
+tr.ex_color {
+  color: black;
+  background-color: #c70f0f30 !important;
+}
+#za td,#za th{
+  border: 1px solid black !important;
+} 
+
