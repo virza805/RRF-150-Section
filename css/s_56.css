@@ -1,0 +1,165 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus{
+    outline: 0 solid;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+    font-weight: 400;
+}
+body{
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif; */
+    
+    font-family: 'Playfair Display', serif;
+    line-height: 1.714;
+    color: #626262;
+}
+a, a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* RRF 150 Section Video_56 # 12/1/2020 11:04pm End */
+h1 ,h2{
+    font-weight:400;
+    font-family: 'Open Sans', sans-serif;
+}
+.logo{
+    color: #252c30;
+}
+.logo a{
+    color: #252c30;
+}
+.logo a:hover{
+    color: #10ac24;
+    font-weight: 700;
+}
+/* body.theme2{
+    background: #6d8ca1;
+background: -moz-linear-gradient(45deg,  #6d8ca1 0%, #8e808f 45%, #9e747a 67%, #9e747a 67%, #ac8270 100%);
+background: -webkit-linear-gradient(45deg,  #6d8ca1 0%,#8e808f 45%,#9e747a 67%,#9e747a 67%,#ac8270 100%);
+background: linear-gradient(45deg,  #6d8ca1 0%,#8e808f 45%,#9e747a 67%,#9e747a 67%,#ac8270 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d8ca1', endColorstr='#ac8270',GradientType=1 );
+
+} */
+body.theme1{
+    background-image: url(../img/video.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+html, .theme1{
+    height: 100%;
+}
+.site-wrap{
+    height:100%;
+}
+.site-wrap-table{
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.site-wrap-tablecell{
+    display:table-cell;
+    vertical-align: middle;
+    width: 100%;
+    position: relative;
+}
+.header-area{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    padding:50px 80px;
+}
+.mainmenu56{
+    font-size: 20px;
+    text-align: right;
+}
+.mainmenu56 a{
+    color:#252c30;
+}
+.mainmenu56 ul{
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+.mainmenu56 li{
+    display: inline-block;
+    padding-left:30px;
+}
+.hero_text{
+    width:50%;
+    padding-left:80px;
+    font-size: 18px;
+    columns: #817c82;
+    line-height: 1.8;
+    position: relative;
+}
+.hero_text h2{
+    color: #252c30;
+    line-height: 52px;
+    font-size: 43px;
+    margin-bottom: 22px;
+}
+.hero_text a{
+    color: #252c30;
+    font-weight:700;
+    font-size: 22px;
+}
+.footer-area{
+    position: absolute;
+    left:0;
+    bottom:0 !important;
+    width:100%;
+    border-top:1px solid #e6dfe4;
+    padding:10px;
+}
+.social_icon_links{
+    text-align: right;
+    padding-right: 65px;
+}
+.social_icon_links a{
+    color: #626262;
+    font-size: 30px;
+    padding:14px;
+}
+.social_icon_links a:hover{
+    color: #0aaa0a;
+    font-size: 32px;
+}
+.coyright-text{
+    margin:0;
+    padding-left: 65px;
+    padding-top:10px;
+}
+
+/* RRF 150 Section Video_56 # 12/1/2020 :04pm End */
