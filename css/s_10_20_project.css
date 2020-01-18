@@ -403,6 +403,26 @@ a.load-more-product-btn {
 .product-promotions{
     background: #f9f9f8;
 }
+.product-promotions img{
+    width:auto !important;
+}
+/* product-promotions Slider  */
+.product-promotions .owl-dots button{
+    height:15px;
+    width:15px;
+    background-color: #d8e9ee;;
+    border-radius:50%;
+    margin-bottom:10px;
+    display: inherit;
+}
+.product-promotions .owl-dots button.owl-dot.active {
+    background-color: #e55288;
+}
+.product-promotions .owl-dots{
+    position:absolute;
+    right:3%;
+    top:50%;
+}
 .promo-bg{
     background: #f4f0f0;
 }
@@ -454,6 +474,8 @@ a.load-more-product-btn {
 .brand-images img{
     margin:0px 8px 0px 8px;
     text-align: center;
+    height: 50px;
+    padding: 0 18px;
 }
 .footer-area{
     background-color: #f4f4f4;
@@ -497,13 +519,13 @@ input[type=email]{
 }
 /* 
  /* Owl carousel / Slider secton top */
- /* .owl-carousel .owl-item .single-slide-item img{
+ .owl-carousel .owl-item .single-slide-item img{
      width: auto;
  }
- .homepage-slider-wrap .owl-nav, .homepage-slider-wrap .owl-nav div {
+ .homepage-slider-wrap .owl-nav, .homepage-slider-wrap .owl-nav button {
      height: auto;
  }
- .homepage-slider-wrap .owl-nav div{
+ .homepage-slider-wrap .owl-nav button{
      color:#5b4060;
      font-size: 20px;
      left:0;
@@ -514,21 +536,25 @@ input[type=email]{
      top:50%;
      transition: all 0.3s ease 0s;
  }
- .homepage-slider-wrap .owl-nav div.owl-next{
+ .homepage-slider-wrap .owl-nav button.owl-next{
      left:auto;
      right:5%;
  }
- .homepage-slider-wrap:hover .owl-nav div{
+ .homepage-slider-wrap:hover .owl-nav button{
      left:auto;
      opacity: 1;
  }
- .homepage-slider-wrap:hover .owl-nav div.owl-next{
+ .homepage-slider-wrap:hover .owl-nav button.owl-next{
     left:auto;
     right:5%;
 }
-.homepage-slider-wrap .owl-nav div.owl-next{
+.homepage-slider-wrap .owl-nav button.owl-next{
     left:auto;
     right:0;
-} */ 
+}
+.homepage-slider-wrap .owl-nav button.owl-prev{
+    left:5%;
+    right:auto;
+}
  
  /* Owl carousel / Slider secton top */

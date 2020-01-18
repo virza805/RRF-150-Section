@@ -55,7 +55,105 @@ img{
 .img-1 {
     background-image: url(../img/Tanvir_Hasan.jpg);
 }
-/* FFR 150 Section Video_21 # 31/8/2019 12:56pm Start */
+/* FFR 150 Section Video_21 # 17/1/2020 10:43pm Start */
+
+.slider_img{
+    height: 600px;
+    width:400px;
+}
+#v_21{
+    font-family: 'Roboto', serif;
+    line-height: 1.7;
+    font-size: 15px;
+}
+.header-top-area, .header-top-area a{color:#fff;}
+.header-top-area{
+    background-color:#218ae6;
+    padding:10px 0;
+}
+.header-top-area .text-right i.fa{
+    padding-left:20px;
+}
+.header-top-area h3 a{
+    color:#333;
+}
+#logo_21{
+    width:70px;
+}
+.header-area{
+    /* background-color: #5ba939; */
+    z-index: 2;
+}
+.header-area ul{
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+#v_21 .header-area ul li{
+    display:inline-block;
+}
+#v_21 .header-area ul li a{
+    display:block;
+    color:#333;
+    padding:15px;
+    text-transform: uppercase;
+    padding-right:0;
+    padding-left:50px;
+}
+#v_21 .header-area ul li a:hover{
+   
+    color:#218ae6;
+}
+#v_21 .header-area h3 a{
+    color:#333;
+}
+#v_21 .header-area h3{
+    font-weight: 700;
+    margin: 0;
+}
+.single-homepage{
+    background-color:#218ae6;
+    margin-top: 88px;
+    color:#fff;
+    font-size: 17px;
+    padding-top: 150px;
+}
+.single-homepage h2{
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 60px;
+}
+.slide_btn{
+    background-color: #ffe000;
+    color: #333;
+    padding: 15px 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14;
+    display: inline-block;
+    margin-top: 14px;
+    border-radius: 5px;
+}
+.homepage-slid .owl-dots {
+    text-align: center;
+    margin: 60px 0;
+}
+.homepage-slid .owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    background-color:#ffe000; 
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+}
+.homepage-slid .owl-dots button.owl-dot.active {
+    
+    background-color:#101a02; 
+    
+}
+/* FFR 150 Section Video_21 # 17/1/2020 10:43pm End */
+/* FFR 150 Section Video_22 # 31/8/2019 12:56pm Start */
  .section-padding{
      margin: 80px 0;
      font-weight: 400;

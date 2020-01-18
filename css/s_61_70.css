@@ -38,9 +38,9 @@ body{
     font-family: 'PT Serif', serif;
     font-family: 'Roboto', sans-serif; */
     
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.714;
-    color: #626262;
+    color: #292727;
 }
 a, a:hover{
     text-decoration: none;
@@ -49,4 +49,149 @@ ul{
     list-style: none;
 }
 /* RRF 150 Section Video_62 # 15/1/2020 11:10pm Start  */
-/* RRF 150 Section Video_62 # 15/1/2020 3:07pm End  */
+.section-padding{
+    padding:80px 0;
+}
+.project-bg1{background-image: url(../img/slider.jpg)}
+.project-bg2{background-image: url(../img/v5_1.jpg)}
+.project-bg3{background-image: url(../img/vir.png)}
+.project-bg4{background-image: url(../img/screenshot.jpg)}
+.project-bg5{background-image: url(../img/Tanvir_Hasan.jpg)}
+.project-bg6{background-image: url(../img/Man.png)}
+.project-bg7{background-image: url(../img/video.jpg)}
+.project-bg8{background-image: url(../img/v5.jpg)}
+.project-bg9{background-image: url(../img/v_2.jpg)}
+
+.project-filter{
+    margin:0 0 50px;
+    padding: 0;
+    list-style: none;
+    text-align:center;
+}
+.project-filter li{
+    display:inline-block;
+    font-weight: 700;
+    color:#777;
+    border-bottom:3px solid #fff;
+    margin:0 10px;
+    cursor: pointer;
+}
+.project-filter li.active{
+    border-color:#029c02;
+}
+.single-project-item{
+    background-color:#626262;
+    background-position:center;
+    background-size:cover;
+    height:300px;
+    margin-bottom: 30px;
+    display:table;
+    width:100%;
+    position: relative;
+    z-index: 1;
+}
+.project-hover{
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+    padding:30px;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+    font-weight: 300;
+    text-transform: lowercase;
+    transform: scale(.8);
+    opacity: 0;
+    visibility: hidden;
+}
+.project-hover::after{
+    position: absolute;
+    z-index: -1;
+    left:0;
+    top:0;
+    content: "";
+    background-color:#fff;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+}
+.project-hover h2{
+    font-size:20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.project-hover p:last-child{
+    margin:0;
+}
+.single-project-item::before{
+    position: absolute;
+    right:0;
+    width:80px;
+    height: 80px;
+    content:"";
+    border-right:1px solid #000;
+    border-top:1px solid #000;
+    z-index:2; 
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.single-project-item::after{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width:80px;
+    height: 80px;
+    content:"";
+    border-left:1px solid #000;
+    border-bottom:1px solid #000;
+    z-index:2;    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+.single-project-item:hover .project-hover{
+    transform:scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+.single-project-item:hover::before, .single-project-item:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+/* RRF 150 Section Video_62 # 18/1/2020 11:54pm End  */
+/* RRF 150 Section Video_63 # 19/1/2020 12:02pm Start  */
+.service-list{
+    border-left: 1px solid #ddd;
+    border-top:1px solid #ddd;
+}
+.single-service-box{
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding:7%;
+    text-align: center;
+    font-size:16px;
+    line-height:2;
+    transition: .3s;
+}
+.service-list .col-md-4{
+    padding:0;
+}
+.service-list .row{
+    margin:0;
+}
+.single-service-box h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.service-icon{
+    color:green;
+    font-size:20px;
+}
+.single-service-box:hover{
+    box-shadow:0 30px 100px #999;
+}
+/* RRF 150 Section Video_63 # 18/1/2020 11:54pm End  */
+/* RRF 150 Section Video_65 # 18/1/2020 11:54pm End  */
+
+/* RRF 150 Section Video_65 # 18/1/2020 11:54pm End  */

@@ -2,7 +2,14 @@
     "use strict";
     
     jQuery(document).ready(function($){
-
+        $(".homepage-slid").owlCarousel({
+            items:1,
+            loop:true,
+            autoplay:true,
+            nav:false,
+            dots:true
+        });
+// End 21 carousel
         $(".projects-list").isotope();
 
         $('.projects-titles li').on('click', function(){
