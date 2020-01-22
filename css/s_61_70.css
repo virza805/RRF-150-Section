@@ -192,6 +192,281 @@ ul{
     box-shadow:0 30px 100px #999;
 }
 /* RRF 150 Section Video_63 # 18/1/2020 11:54pm End  */
-/* RRF 150 Section Video_65 # 18/1/2020 11:54pm End  */
+/* RRF 150 Section Video_65 # 19/1/2020 9:41pm start  */
+#v_66{
+    font-size:15px;
+    line-height: 1.8;
+}
+.section_title{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.features-wrap{
+    position:relative;
+    z-index: 1;
+    padding-bottom:170px;
+}
+.hard-abseluat{
+    position: absolute;
+    right: -100px;
+    bottom:0;
+}
+#v_66 h3{
+    font-size: 24px;
+    margin-bottom:15px;
+}
+/* Start Now before mainmenu-area */
+.top-bg{
+    background-color: #170b44;
+    width:100%;
+    z-index: 99;
+}
+.top-bg.is-stick{
+    position: fixed;
+}
+.hading{
+    background-color: #00a651;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 70px 3px 0px;
+    margin: 0px;
+    margin-top: 80px;
+    font-weight: 700;
+    max-height: 100px;
+}
+.hading span{
+    background-color: #ed1c24;
+    height: 100%;
+    padding: 0 15px 0 70px;
+}
+.social-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #00ccff;
+    color: #c1bfbf;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition:.4s;
+}
+.social-btn a:hover{
+    background-color: green;
+    color:#7b0505;
+}
+/* Start Now mainmenu-area */
+.mainmenu-area a:hover{
+    background-color: green;
+    border-radius: 0 50px 0 50px;
+}
+.mainmenu-area{
+    background-color:#4c4b8a;
+}
+.mainmenu-area ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    z-index: 7;
+}
+.mainmenu-area li{
+    display:inline-block;
+    position:relative;
+}
+.mainmenu-area li a{
+    display:block;
+    padding:20px;
+    color:#fff;
+    transition:.9s;
+}
+.menu-main li ul{
+    position:absolute;
+    left: 0;
+    top:86px;
+    background-color: #4c4b8a;
+    width:250px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    border:1px solid #170b44;
+    padding:10px;
+}
+.menu-main li ul li{
+    display:block;
+}
+.menu-main li li a{
+    padding: 7px 15px;
+}
+.menu-main li:hover > a{
+    color:#24d5a1;
+}
+.menu-main li:hover li:hover > a{
+    background-color:#068025;
+    color:#fff;
+}
+.menu-main li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top:66px;
+}
+.menu-main li.mea-menu{
+    position:static;
+}
+.menu-main li.mea-menu ul{
+    position: relative;
+    left:auto;
+    top:auto;
+    opacity: 1;
+    visibility:visible;
+    padding:0;
+    width:auto;
+}
+.mega-menu-wrapper{
+    left: 0;
+    position: absolute;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    z-index: -1;
+    box-shadow:0 0 5px #170b44;
+    top:86px;
+    opacity: 0;
+    visibility:hidden;
+    transition: .3s;
+}
+.menu-main li.mea-menu:hover .mega-menu-wrapper{
+    opacity: 1;
+    visibility: visible;
+    top:70px;
+    z-index: 99;
+}
+.logo-img a img{
+    max-height: 50px;
+    margin:10px 0;
+}
+.boxed-btn{
+    margin:10px 0;
+    padding:10px 15px;
+    background-color: #626262;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+    position: absolute;
+    right:4px;
+}
+/* RRF 150 Section Video_65 # 19/1/2020 9:41pm End  */
+/* RRF 150 Section Video_69 # 21/1/2020 10:31pm On  */
+.footer-area{
+    color: #fff;
+    background: #2e77b1;
+    padding: 80px 0;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.footer-area h3{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer-area, .footer-area > a {
+    color: #fff;
+}
+.footer-wid ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-wid ul li a{
+    color: #fff;
+}
+.footer-subscribtion-form h4{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.footer-subscribtion-form input[type="email"]{
+    border: none;
+    color: #000;
+    padding:10px;
+    width:73%;
+}
+.footer-subscribtion-form input[type="submit"] {
+    border: none;
+    color: #2e77b1;
+    padding: 10px;
+    width: 25%;
+    background: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.cont-info a{
+    color: #fff;
+}
+.so-links a {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 20px;
+    margin-top: 14px;
+    display: inline-block;
+}
+.so-links a i.fa {
+    color: #fff;
+}
+p.cont-info {
+    position: relative;
+    padding-left: 30px;
+}
+p.cont-info i.fa {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.copyright-area, .copyright-area a {
+    color: #263238;
+}
+.copyright-area ul {
+    list-style: none;
+    text-align: right;
+}
+.copyright-area ul li {
+    display: inline-block;
+    text-align: right;
+}
+.copyright-area ul li::after {
+    content: "|";
+    padding: 0 9px;
+}
+.copyright-area ul li:last-child::after {
+    display: none;
+}
+.copyright-area {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(182, 183, 184);
+    background: #e9eaec;
+}
 
-/* RRF 150 Section Video_65 # 18/1/2020 11:54pm End  */
+/* RRF 150 Section Video_69 # 21/1/2020 10:41pm End  */
+.site-main-wrap_s_footer{
+    margin-bottom:480px;
+    position: relative;
+    z-index: 999;
+    background-color:#fff;
+}
+.footer-area{
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+.copyright-area{
+    z-index: 9999;
+}

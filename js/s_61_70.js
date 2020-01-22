@@ -25,6 +25,14 @@
         });
         // end isotope
 
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+
+            if(scroll>=100px){
+                $(".top-bg").addClass("is-stick");
+            }
+        });
+
     });
 
     jQuery(window).load(function(){

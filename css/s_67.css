@@ -1,0 +1,144 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus{
+    outline: 0 solid;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+    font-weight: 400;
+}
+body{
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif; */
+    
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.714;
+    color: #fff;
+}
+a, a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* RRF 150 Section Video_67 # 20/1/2020 11:36pm Start  */
+.right-side{background-image:url(../img/Rose2.jpeg)}
+.left-side{
+    width:20%;
+    height: 100%;
+    background-color: #170b44;
+    position: fixed;
+
+}
+.right-side{
+    width:80%;
+    margin-left: 20%;
+    height: 100%;
+    display:table;
+    position: relative;
+    z-index: 2; 
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.right-side::after{
+    position:absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height:100%;
+    content:"";
+    background-color:#333;
+    opacity:.5;
+    z-index: -1;  
+}
+body, html{
+    height: 100%;
+}
+.right-side-wrap{
+    display:table-cell;
+    vertical-align: middle;
+    color:#fff;
+    font-size:23px;
+    padding:10%;
+}
+.right-side-wrap h1{
+    font-size:62px;
+}
+.right-side-wrap h1 span{
+    color:#ffce43;
+}
+.boxed_btn{
+    font-size:17px;
+    padding:15px 50px;
+    display:inline-block;
+    margin-top:50px;
+    border-radius:50px;
+    position: relative;
+    z-index: 3;
+    color: #000;
+    font-weight: 700;
+}
+.boxed_btn::before{
+    position: absolute;
+    z-index: -1;
+    background-color: #ddd;
+    opacity: .5;
+    content: "";
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    border-radius: 50px;
+}
+/* .left-side */
+.left-side .logo{
+    text-align: center;
+    color:#fff;
+    position: relative;
+    z-index: 2;
+    margin:85px 0;
+}
+.left-side .logo::before{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:150px;
+    height:150px;
+    background-color:#ffce43;
+    content:"";
+    z-index: -1;
+    border-radius:50%;
+    margin-left:-75px;
+    margin-top:-75px;
+    opacity: .2;
+}
+
+/* RRF 150 Section Video_67 # 21/1/2020 11:12am End */
