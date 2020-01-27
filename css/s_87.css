@@ -1,0 +1,153 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+ @font-face {
+    font-family: 'Asiyah Script';
+    src: url('../fonts/AsiyahScript.eot');
+    src: url('../fonts/AsiyahScript.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AsiyahScript.woff2') format('woff2'),
+        url('../fonts/AsiyahScript.woff') format('woff'),
+        url('../fonts/AsiyahScript.ttf') format('truetype'),
+        url('../fonts/AsiyahScript.svg#AsiyahScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus{
+    outline: 0 solid;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Asiyah Script';
+    margin:0 0 15px;
+    font-weight: normal;
+}
+body{
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif; */
+    
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.714;
+    color: #626262;
+}
+html, body{height: 100%;}
+a, a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* RRF 150 Section Video_88 # 25/1/2020 1:03 pm On */
+.carousel-bg-1{background-image:url(../img/blue-sky.jpg)}
+.carousel-bg-2{background-image:url(../img/video.jpg)}
+.carousel-bg-3{background-image:url(../img/bright-paint-strokes.jpg)}
+
+.homepage-slids, .homepage-slids div{
+    height: 100%;
+}
+.homepage-slids div.owl-nav {
+    height: auto;
+}
+.homepage-slids div.owl-dots {
+    height: auto;
+}
+.homepage-slids div.carosel-item-table-cell div {
+    height: auto;
+}
+.homepage-slids button.owl-next {
+    position: fixed;
+    top: 50%;
+    margin-top: -30px;
+    right: 50px;
+    line-height: 60px;
+}
+.homepage-slids div.owl-nav {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: -30px;
+}
+.homepage-slids .owl-dots img{
+    height: 100px;
+    width:100px;
+    border-radius: 5px;
+}
+.homepage-slids .owl-dots button.owl-dot{
+    height: 100px;
+    width:100px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+.homepage-slids .owl-dots div{
+    display:inline-block;
+    margin-left: 20px;
+}
+.homepage-slids .owl-dots{
+    position: absolute;
+    right:15%;
+    bottom:-50px;
+}
+
+/*
+.homepage-slids div.carosel-item-table-cell, .homepage-slids div.carosel-item-table-cell div,.homepage-slids .owl-nev,.homepage-slids .owl-nev button,.homepage-slids .owl-dots,.homepage-slids .owl-dots button{
+    height: auto;
+}
+*/
+.single-carousel-item{
+    position: absolute;
+    display: table;
+    width:100%;
+    height: 100%;
+    content: "";
+    background-color: #626262;
+    background-size: cover;
+    background-position: center;
+}
+.carosel-item-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color:#fff;
+    font-size: 20px;
+}
+.carosel-item-table-cell h2{
+    font-size: 150px;
+    margin-bottom: 0;
+}
+.boxed-btn{
+    background-color: #b93f02;
+    color:#fff;
+    display:inline-block;
+    padding:10px 38px;
+    border-radius:5px;
+    margin-top:30px;
+}
+/* RRF 150 Section Video_88 # 25/1/2020 1:03 pm End  */
