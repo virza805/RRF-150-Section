@@ -1,0 +1,658 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: 0 solid;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+input:focus, a:focus,button:focus,textarea:focus{
+    outline: none;
+}
+body{
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif; */
+    
+    font-family: 'Roboto', sans-serif;
+    color: #626262;
+}
+
+/* RRF 150 Section Video_101 # 28/1/2020 9:47 pm Start  */
+#v_101{
+    font-weight: 300;
+}
+.author-img{position: relative;}
+.author-img-hover{
+    position: absolute;
+    left:0;
+    top:100%;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+    font-size:17px;
+    color:#555; 
+    transition:.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+.single-team-box:hover .author-img-hover{
+    opacity: 1;
+    visibility: visible;
+    top:0;
+}
+.author-img-hover::after{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    content:"";
+    background-color: #ddd;
+    opacity: .8;
+    z-index: -1;
+}
+.author-img-hover-inner{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.author-img-hover h2{
+    text-transform:uppercase;
+    font-size:20px;
+    letter-spacing: 2px;
+}
+.social-links a{
+    display:inline-block;
+    color:#919191;
+    padding:2px;
+}
+.single-team-box h3{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:16px;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+.single-team-box h3 span{
+    display: block;
+    font-size: 74%;
+    margin-top:9px;
+}
+.author-img-hover-wrap{
+    display: table-cell;
+    vertical-align: middle;
+    padding:20px;
+}
+.section-padding{padding:80px 0;}
+/* RRF 150 Section Video_101 # 28/1/2020 10:37pm End  */
+/* RRF 150 Section Video_102 # 28/1/2020 11:00pm start */
+#v_102 , #v_102 h2{
+    font-weight: 300;
+}
+.section-title{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}.contat-us-form{
+    font-size: 17px;
+    font-weight: 400;
+}
+.form-element{position: relative;}
+.form-element label{
+    position: absolute;
+    left:15px;
+    top:10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color:#000;
+}
+.contat-us-form input[type=text], .contat-us-form input[type=email], .contat-us-form textarea {
+    border: 1px solid #ddd;
+    padding: 14px;
+    width: 100%;
+    font-size: 15px;
+    padding-top: 34px;
+    padding-bottom: 10px;
+}
+.contat-us-form input[type=text]:focus, .contat-us-form input[type=email]:focus, .contat-us-form textarea:focus {
+    background-color: #f0f0f0;
+}
+.contat-us-form input[type=submit]{
+    float: right;
+    background-color: blueviolet;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+p.small-text{
+    font-size: 14px;
+    margin:0;
+    padding:12px 0;
+}
+/* RRF 150 Section Video_102 # 28/1/2020 11:40 pm End  */
+/* RRF 150 Section Video_103 # 30/1/2020 9:48 am Start*/
+.news-bg{background-image:url(../img/background.jpg)}
+.newsletter-bg{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 160px;
+}
+.newsletter-bg h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.newsletter-bg::after{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height:100%;
+    content:"";
+    background-color:#333 ;
+    z-index: -1;
+    opacity: .5;
+}
+.news-letter-form input[type=email]{
+    background-color: #333;
+    border:1px solid #8e8582;
+    padding:12px 20px;
+    opacity: .6;
+    width:76%;
+    border-radius: 50px;
+}
+.news-letter-form input[type=submit]{
+    background-color: #34b79d;
+    color:#fff;
+    border:none;
+    padding:13px 30px;
+    border-radius:50px;
+    width: 23%;
+}
+.news-letter-form{
+    margin-bottom:14px;
+    font-style: italic;
+}
+.news-letter-form form{
+    font-style: normal;
+}
+.bordered-boxes{
+    overflow: hidden;
+    border-right:1px solid #ededed;
+    margin-top: -160px;
+    position: relative;
+    z-index: 9;
+    background-color: #fff;
+}
+.single-bordered-box{
+    float:left;
+    width:50%;
+    border-left:1px solid #ededed;
+    border-top:1px solid #ededed;
+    border-bottom:1px solid #ededed;
+    padding:50px 80px;
+    text-align: center;
+    min-height: 322px;
+
+}
+.single-bordered-box h4{
+    text-transform:uppercase;
+    font-size: 2opx;
+    margin-bottom: 25px;
+}
+.silngle-testimonial-box{
+    font-style: italic;
+    line-height: 1.6;
+}
+p.author-name{
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top:15px;
+}
+.boxed-btn{
+    display:inline-block;
+    background-color: #000;
+    color:#fff;
+    padding:8px 27px;
+    margin-top: 10px;
+    border-radius: 50px;
+
+}
+/* RRF 150 Section Video_103 # 30/1/2020 10:45 am End*/
+/* RRF 150 Section Video_104 # 31/1/2020 12:8 am start*/
+.item-1{background-image: url(../img/item1.png);}
+.item-2{background-image: url(../img/item2.png);}
+.item-3{background-image: url(../img/item3.png);}
+.item-4{background-image: url(../img/k3.png);}
+.item-5{background-image: url(../img/kid.png);}
+.item-6{background-image: url(../img/w4.png);}
+
+.product-bg{
+    background-position: center top;
+    background-size: cover;
+    background-color: #ddd;
+    height: 338px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 15px;
+}
+.ticker{
+    position: absolute;
+    right: 15px;
+    top:15px;
+    background-color: red;
+    color:#fff;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    border-radius: 50%;
+
+}
+.ticker-green{
+    background-color: seagreen;
+}
+.product-buttom-hover{
+    position: absolute;
+    left:50%;
+    width:200px;
+    margin-left:-100px;
+    bottom:-14px;
+    background-color:#fff;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.single-product-box:hover .product-buttom-hover{
+    opacity: 1;
+    visibility: visible;
+    bottom:30px;
+}
+.product-buttom-hover a{
+    display:block;
+    float: left;
+    width:33.33333%;
+    border-left:1px solid #ddd;
+    border-top:1px solid #ddd;
+    text-align: center;
+    color:#333;
+    padding:13px;
+}
+.product-buttom-hover a:hover{
+    background-color: #000;
+    color:#fff;
+}
+.single-product-box{
+    text-align: center;
+}
+.single-product-box h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom:10px;
+}
+.product-prices{
+    font-size: 120%;
+    font-weight: 700;
+}
+/* RRF 150 Section Video_104 # 31/1/2020 12:55 am End*/
+/* RRF 150 Section Video_105 # 31/1/2020 8:10pm Start*/
+.section-padding.after-bg.afterbg-1::after{background-image:url(../img/background.jpg)}
+.afterbg-2::after{background-image:url(../img/screenshot.jpg)}
+
+.section-padding.after-bg{
+    position: relative;
+    z-index: 1;
+    margin:50px 0;
+}
+.section-padding.after-bg::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-color: #8e8582;
+}
+.section-padding.after-bg.afterbg-2::after {
+    right: auto;
+    left: 0;
+}
+.boxed-content{
+    background-color: #fff;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 0 4px #cccccc;
+}
+/* RRF 150 Section Video_105 # 31/1/2020 8:38 pm End*/
+/* RRF 150 Section Video_106 # 31/1/2020 9:00 pm On*/
+#v_106{
+    font-family: 'Open Sans', sans-serif;
+}
+.slide-bg-1{background-image: url(../img/Web-slider.png);}
+.slide-bg-2{background-image: url(../img/4.jpg);}
+.slide-bg-3{background-image: url(../img/1.jpg);}
+
+
+.welcome-area{
+    position: relative;
+    z-index: 1;
+    padding-bottom:100px;
+}
+
+/*Use css gradient generator link below
+https://www.colorzilla.com/gradient-editor/
+*/
+
+.welcome-area::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:65%;
+    height: 100%;
+    content:"";
+    z-index: -1;
+    background: #035a95;
+background: -moz-linear-gradient(left,  #035a95 0%, #0497bc 100%);
+background: -webkit-linear-gradient(left,  #035a95 0%,#0497bc 100%);
+background: linear-gradient(to right,  #035a95 0%,#0497bc 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#035a95', endColorstr='#0497bc',GradientType=1 );
+
+}
+.logo a, .mainmenu a{color:#fff;}
+.logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 9px
+}
+.mainmenu ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.mainmenu li{
+    display: inline-block;
+    position: relative;
+}
+.mainmenu li a{
+    display: block;
+    padding: 18px 17px ;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.active a{
+    color:#6ef904;
+}
+.header-right-content a{
+    color: #000;
+}
+.social-links{
+    display:inline-block;
+    margin-right: 50px;
+    border-left: 1px solid #e8e8e8;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.social-links a{
+    display: inline-block;
+    padding:0 4px;
+    font-size: 14px;
+}
+.header-right-content.text-right {
+    padding-top: 16px;
+}
+.header-area {
+    padding: 30px 0;
+}
+.single-slide-item{
+    height:500px;
+    background-position: center;
+    background-size: cover;
+    background-color: goldenrod;
+    display: table;
+    width: 100%;
+
+}
+.slide-inner{
+    display:table-cell;
+    vertical-align: middle;
+    width:100%;
+}
+.slide-text{
+    max-width: 700px;
+    color:#fff;
+    padding:130px;
+}
+.slide-text h4{
+    color: #5fb7d0;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+.slide-text h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color:#000;
+}
+a.boxed-btns{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding:16px 40px;
+    display: inline-block;
+    color:#fff;
+    background: #035a95;
+    background: -moz-linear-gradient(left,  #035a95 0%, #0497bc 100%);
+    background: -webkit-linear-gradient(left,  #035a95 0%,#0497bc 100%);
+    background: linear-gradient(to right,  #035a95 0%,#0497bc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#035a95', endColorstr='#0497bc',GradientType=1 );
+    /*#Gradint Color hoba#*/
+}
+.homepage-slides .owl-nav i.fa {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    opacity: .9;
+}
+/* RRF 150 Section Video_106 # 1/2/2020 7:28 am End*/
+/* RRF 150 Section Video_107 # 1/2/2020 7:46 am Start*/
+.pricing-title-wrap{background-image: url(../img/blue-sky.jpg);}
+.pricing-title-wrap{
+    color:#fff;
+    text-align: center;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    padding-top:40px;
+    padding-bottom: 200px;
+}
+.pricing-title-wrap h2{
+    font-weight: 300;
+    font-size: 52px;
+}
+.pricing-header{
+    background-color:#010824;
+    color:#70727a;
+    text-align: center;
+    position: relative;
+    display:table;
+    width:100%;
+    height: 250px;
+}
+.pricing-header h2{
+    color:#fff;
+    font-size: 50px;
+}
+.pricing-header-inner{
+    display: table-cell;
+    vertical-align: middle;
+    padding:30px;
+}
+.special-pricing-text{
+    position: absolute;
+    left: 0;
+    background-color: #21252d;
+    width: 100%;
+    padding:14px;
+    color:#fff;
+    text-transform: uppercase;
+    line-height: 20px;
+    top:-48px;
+}
+.pricing-content{
+    font-size: 110%;
+    padding:30px;
+}
+.pricing-sub-title{
+    margin:0;
+    background-color: #f0f0f0;padding:15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+.pricing-note{
+    opacity: .6;
+    font-size: 70%;
+    margin-left: -10px;
+    margin-top:20px;
+}
+.pricing-list-wrap{
+    margin-top:-110px;
+}
+.pricing-list-wrap .row{
+    margin-left:-5px;
+    margin-right:-5px;
+}
+.pricing-list-wrap .col-md-4{
+    padding-left:5px;
+    padding-right:5px;
+}
+/* RRF 150 Section Video_107 # 1/2/2020 8:29 am End*/
+/* RRF 150 Section Video_110 # 1/2/2020 3:37 pm start*/
+.protfolio-bg-1{background-image: url(../img/slider.jpg)}
+.protfolio-bg-2{background-image: url(../img/v5_1.jpg)}
+.protfolio-bg-3{background-image: url(../img/vir.png)}
+.protfolio-bg-4{background-image: url(../img/screenshot.jpg)}
+.protfolio-bg-5{background-image: url(../img/Tanvir_Hasan.jpg)}
+.protfolio-bg-6{background-image: url(../img/Man.png)}
+.protfolio-bg-7{background-image: url(../img/video.jpg)}
+.protfolio-bg-8{background-image: url(../img/v5.jpg)}
+.protfolio-bg-9{background-image: url(../img/v_2.jpg)}
+
+
+.protfolio-list{
+    overflow: hidden;
+}
+.single-proftfolio-item{
+    width:33.33333%;
+    float: left;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-color: #537439fd;
+    position: relative;
+    z-index: 1;
+}
+.large-bg.single-proftfolio-item{
+    height: 600px;
+}
+.protfolio-hover h4{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.protfolio-hover{
+    padding:20px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom:-50px;
+    width:100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.single-proftfolio-item::after{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    content:"";
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+}
+.single-proftfolio-item::after{
+    background: #cedce7;
+background: -moz-linear-gradient(top,  #cedce7 0%, #423436 100%);
+background: -webkit-linear-gradient(top,  #cedce7 0%,#423436 100%);
+background: linear-gradient(to bottom,  #cedce7 0%,#423436 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#423436',GradientType=0 );
+
+}
+.single-proftfolio-item:hover::after{
+    opacity: .9;
+}
+.single-proftfolio-item:hover .protfolio-hover{
+    bottom:0;
+    opacity: 1;
+    visibility: visible;
+}
+/* RRF 150 Section Video_110 # 1/2/2020 8:29 am End*/
