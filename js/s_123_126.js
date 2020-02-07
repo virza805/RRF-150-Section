@@ -8,9 +8,7 @@
             autoplay:false,
             nav:false,
             dots:true
-        });//end carousel
-        $(".video-play-btn").modalVideo();
-       
+        });
 
     });
 

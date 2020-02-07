@@ -31,8 +31,6 @@ body{
     font-family: 'Roboto', sans-serif; */
     
     font-family: 'Roboto', sans-serif;
-    line-height: 1.714;
-    color: #626262;
 }
 h1,h2,h3,h4,h5,h6{
     margin:0 0 15px;
@@ -53,5 +51,366 @@ input:focus, a:focus,button:focus,textarea:focus{
 ul{
     list-style: none;
 }
-/* RRF 150 Section Video_111 # 3/2/2020 11:10pm Start  */
-/* RRF 150 Section Video_111 # 3/2/2020 3:07pm End  */
+.section-padding{padding:80px 0;}
+/*RRF150 Section Video_121#4/2/2020 7:10am Start*/
+.v_121-bg{
+    background-color: #efefef;
+    padding: 0;
+}
+
+.bg-1{background-image: url(../img/Rose.jpg);}
+.bg-2{background-image: url(../img/Rose2.jpeg);}
+.bg-3{background-image: url(../img/screenshot.jpg);}
+.bg-4{background-image: url(../img/Rose1.jpg);}
+
+.service-box-hover{
+
+}
+.service-icon{
+    font-size: 120px;
+    opacity: .1;
+    line-height: 120px;
+    margin-bottom: 40px;
+}
+.single-service-box{
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 1.8;
+    padding: 80px 30px;
+}
+.single-service-box h2{
+    margin-bottom:50px;
+}
+.service-box-hover{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-size: cover;
+    background-position:center;
+    transform:scale(1);
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.single-service-box:hover .service-box-hover{
+    opacity: 1;
+    visibility: visible;
+    transform:scale(1.1);
+}/* https://www.colorzilla.com/gradient-editor/ */
+.service-box-hover::after{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    content:"";
+    z-index: -1;
+    opacity: .8;
+    background: #b4ddb4;
+    background: -moz-linear-gradient(top,  #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    background: -webkit-linear-gradient(top,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+    background: linear-gradient(to bottom,  #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 );
+
+}
+.service-box-inner{
+    position: relative;
+    z-index: 3;
+}
+.single-service-box:hover {
+    color:#fff;
+}
+.single-service-box:hover .service-icon {
+    opacity: 1;
+}
+/* RRF 150 Section Video_121 # 4/2/2020 8:00am End  */
+/* RRF 150 Section Video_122 # 4/2/2020 8:07am start*/
+.speciel-bg-section::before{background-image: url(../img/Rose1.jpg);}
+.speciel-bg-section::before{
+    position: absolute;
+    left: 0;
+    top:-25%;
+    height: 150%;
+    width:50%;
+    content:"";
+    background-color: cornflowerblue;
+    background-position: center;
+    background-size: cover;
+}
+.speciel-bg-section{
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    position: relative;
+    padding:100px 50px 100px 55%;
+}
+a.boxed-btn{
+    display:inline-block;
+    padding:15px 30px;
+    background-color: coral;
+    color:#fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top:20px;
+}
+.speciel-bg-section::after{
+    position: absolute;
+    right: -40px;
+    bottom:-40px;
+    height: 100%;
+    width:50%;
+    content:"";
+    border:4px solid coral;
+    z-index: -1;
+}
+/* RRF 150 Section Video_122 # 4/2/2020 8:00am End  */
+/* RRF 150 Section Video_127 # 4/2/2020 10:14am Start*/
+#v_127{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+.dark-bg{
+    background-color: #191d1c;
+    color:#8b8f8e;
+}
+.dark-bg h1{
+    font-size: 80px;
+    font-weight: 800;
+    color:#fff;
+}
+.dark-bg h4{
+    font-weight: 300;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin:25px 0 40px;
+    font-size: 20px;
+}
+.btn127{
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 1px solid;
+    font-size: 12px;
+    display: inline-block;
+    padding:12px 30px;
+    margin-top:30px;
+    transition:.3s;
+}
+.btn127:hover{
+    color:#fff;
+    background-color: coral;
+}
+.absolute-img{margin-top:-150px;position: relative;}
+/* RRF 150 Section Video_127 # 4/2/2020 10:43am End  */
+/* RRF 150 Section Video_128 # 4/2/2020 10:50am on*/
+.section-overlay{
+    position: relative;
+    z-index: 1;
+    color:#fff;
+    background-position: center;
+    background-size: cover;
+}
+.section-overlay::after{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    content:"";
+    background-color: #333;
+    z-index: -1;
+    opacity: .5;
+    transition:.3s;
+}
+#v_128 h2{
+    line-height: 1.6;
+}
+.video-play-btn{
+    background-color:#2c99ed;
+    color:#fff;
+    padding:15px 40px;
+    display:inline-block;
+    font-size: 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+}
+.section-overlay:hover::after{
+    opacity: .7;
+}
+/* video open
+https://github.com/appleple/modal-video
+*/
+@keyframes modal-video{from{opacity:0}to{opacity:1}}@keyframes modal-video-inner{from{transform:translate(0, 100px)}to{transform:translate(0, 0)}}.modal-video{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1000000;cursor:pointer;opacity:1;animation-timing-function:ease-out;animation-duration:.3s;animation-name:modal-video;-webkit-transition:opacity .3s ease-out;-moz-transition:opacity .3s ease-out;-ms-transition:opacity .3s ease-out;-o-transition:opacity .3s ease-out;transition:opacity .3s ease-out}.modal-video-close{opacity:0}.modal-video-close .modal-video-movie-wrap{-webkit-transform:translate(0, 100px);-moz-transform:translate(0, 100px);-ms-transform:translate(0, 100px);-o-transform:translate(0, 100px);transform:translate(0, 100px)}.modal-video-body{max-width:940px;width:100%;height:100%;margin:0 auto;display:table}.modal-video-inner{display:table-cell;vertical-align:middle;width:100%;height:100%}.modal-video-movie-wrap{width:100%;height:0;position:relative;padding-bottom:56.25%;background-color:#333;animation-timing-function:ease-out;animation-duration:.3s;animation-name:modal-video-inner;-webkit-transform:translate(0, 0);-moz-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0);-webkit-transition:-webkit-transform .3s ease-out;-moz-transition:-moz-transform .3s ease-out;-ms-transition:-ms-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal-video-movie-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}.modal-video-close-btn{position:absolute;z-index:2;top:-35px;right:-35px;display:inline-block;width:35px;height:35px;overflow:hidden;border:none;background:transparent}.modal-video-close-btn:before{transform:rotate(45deg)}.modal-video-close-btn:after{transform:rotate(-45deg)}.modal-video-close-btn:before,.modal-video-close-btn:after{content:'';position:absolute;height:2px;width:100%;top:50%;left:0;margin-top:-1px;background:#fff;border-radius:5px;margin-top:-6px}
+
+/* RRF 150 Section Video_128 # 4/2/2020 10:50am End  */
+/* RRF 150 Section Video_129 # 4/2/2020 10:50am on*/
+.booking-area{background-image: url(../img/6.jpg);}
+.booking-text{
+    color:#fff;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+}
+.booking-text h1{
+    font-size: 70px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.sapart1{max-width: 350px;}
+.sapart2{max-width: 250px;
+    margin-top: 20px;
+}
+.booking-area{
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    padding-top:100px;
+    padding-bottom:150px;
+}
+.booking-area::after, .booking-form-element::after{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    content: "";
+    background-color: #000;
+    z-index: -1;
+    opacity: .4;
+}
+.booking-form{
+    margin-top: 50px;
+}
+.booking-form-element{
+    position: relative;
+    z-index: 1;
+    padding:25px;
+}
+.booking-form-element select, .booking-form-element input{
+    font-size: 25px;
+    color:#e3c47e;
+    font-weight: 700;
+    width: 100%;
+    background: none;
+    border: none;
+}
+.booking-form-element select:focus{
+    outline: none;
+}
+.booking-form-element input{
+    padding: 25px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.booking-form-element label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    opacity: .8;
+    margin-bottom:15px;
+}
+/* RRF 150 Section Video_129# 4/2/2020 10:50am End  */
+/* RRF 150 Section Video_130# 4/2/2020 10:50am On*/
+.timeline-area{background-image:url(../img/screenshot.jpg)}
+.timeline-area{
+    position: relative;
+    z-index: 1;
+    padding:100px 0;
+}
+.timeline-area::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    background-color: #072938;
+    opacity: .5;
+    z-index: -1;
+}
+.section-title{
+    color:#fff;
+    margin-bottom:80px;
+}
+img.timeline-frame{
+    width:150px;
+    height: 150px;
+border: 2px solid #7e8f97;
+display: block;
+margin: 0 auto;
+border-radius: 50%;
+padding:2px;
+}
+.single-timeline-item::after{
+    position: absolute;
+    left: 50%;
+    top:-90px;
+    height: 100%;
+    width:2px;
+    content: "";
+    background-color: #f5f6f6;
+    z-index: -1;
+    margin-left:-1px;
+}
+/* https://css-tricks.com/the-shapes-of-css/ */
+.timeline-text{
+    position: absolute;
+    background:#072938;
+    color:#fff;
+    width:400px;
+    left:-430px;
+    top:50%;
+    height: 160px;
+    padding:29px;
+    margin-top:-80px;
+    border-radius: 40px;
+    z-index: 2;
+}
+.single-timeline-item{
+    position: relative;
+    width:150px;
+    margin:0 auto 80px;
+}
+.single-timeline-item:nth-child(2n+2) .timeline-text{
+    left:auto;
+    right: -430px;
+}
+/* https://css-tricks.com/the-shapes-of-css/ */
+.single-timeline-item:nth-child(2n+2) .timeline-text {
+    color:#072938;
+    background-color: #fff;
+}
+.single-timeline-item:nth-child(2n+2) .timeline-text::before {
+    position: absolute;
+    left: -33px;
+    top: 30px;
+    content: "";
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border-top: 50px solid transparent;
+    border-right: 100px solid #fff;
+    border-bottom: 50px solid transparent;
+}
+.single-timeline-item:nth-child(2n+1) .timeline-text::before {
+    position: absolute;
+    right: -33px;
+    top: 30px;
+    content: "";
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid #072938;
+    border-bottom: 50px solid transparent;
+}
+/* RRF 150 Section Video_130# 4/2/2020 11:00pm End  */
