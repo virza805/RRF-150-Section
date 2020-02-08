@@ -24,18 +24,15 @@
     display: block;
     margin: 0 auto 15px;
 }
+html, body{height: 100%;}
 body{
-    /* font-family: 'Playfair Display', serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'PT Serif', serif;
-    font-family: 'Roboto', sans-serif; */
-    
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Muli', sans-serif;
     line-height: 1.714;
     color: #626262;
 }
 h1,h2,h3,h4,h5,h6{
-    margin:0 0 15px;
+    font-family: 'Poppins', sans-serif;
 }
 img{
     max-width: 100%;
@@ -53,5 +50,280 @@ input:focus, a:focus,button:focus,textarea:focus{
 ul{
     list-style: none;
 }
-/* RRF 150 Section Video_111 # 3/2/2020 11:10pm Start  */
-/* RRF 150 Section Video_111 # 3/2/2020 3:07pm End  */
+/* RRF 150 Section Video_123-126# 3/2/2020 11:36pm Start  */
+
+.portfolio-bg-1{background-image: url(../img/t1.jpg);}
+.portfolio-bg-2{background-image: url(../img/t2.jpg);}
+.portfolio-bg-3{background-image: url(../img/t5.jpg);}
+.portfolio-bg-4{background-image: url(../img/t3.jpg);}
+.portfolio-bg-5{background-image: url(../img/Rose.jpg);}
+.portfolio-bg-6{background-image: url(../img/t4.jpg);}
+.portfolio-bg-7{background-image: url(../img/t6.jpg);}
+.portfolio-bg-8{background-image: url(../img/t7.jpg);}
+.portfolio-bg-9{background-image: url(../img/t8.jpg);}
+.portfolio-bg-10{background-image: url(../img/t9.jpg);}
+.portfolio-bg-11{background-image: url(../img/t10.jpg);}
+
+.portfoli-list{overflow: hidden;}
+.single-portfolio-item{
+    float: left;
+    width:25%;
+    height: 330px;
+    background-position: center;
+    background-size:cover;
+    display:table;
+    background-color: #ddd;
+    transition:.4s;
+}
+.single-portfolio-item:hover{
+    background-size: 150%;
+}
+.portfolio-hover{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.single-portfolio-item:hover .portfolio-hover{
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio-hover p:hover{opacity: 1;}
+.long{
+    height: 660px;
+}
+.box{
+    height: 660px;
+    width:50%;
+}
+.portfolio-hover a{color:#000;}
+.portfolio-hover h2{
+    font-size: 24px;
+}
+.portfolio-hover p{
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: .5;
+}
+.logo h1{
+    font-family: 'Muli', sans-serif;
+    margin:0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    color:#000;
+    display:inline-block;
+    position: relative;
+}
+.logo h1 span{
+    font-size: 7px;
+    position: absolute;
+    top: 3px;
+    right: -10px;
+}
+.logo a{color:#000;}
+.menu-trigger{
+    display:inline-block;
+    width:30px;
+    height: 2px;
+    background-color:#000000;
+    border-radius: 3px;
+    text-align: right;
+    position: relative;
+}
+.menu-trigger::before, .menu-trigger::after{
+    position:absolute;
+    top: 7px;
+    left: 0;
+    width:30px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+}
+.menu-trigger::after{
+    top:-7px;
+}
+.menu-btn:hover .menu-trigger::after, .menu-btn:hover  .menu-trigger::before{
+    left: 5px;
+    width: 20px;
+}
+.header-area{
+    padding:40px 30px;
+}
+.absolute-menu{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    z-index: 9;
+}
+/*Footer area*/
+.footer-area{
+    background-color: #613ad6;
+    font-size: 18px;
+    line-height: 2;
+    padding: 70px 0;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    z-index: 1;
+}
+.portfoli-list{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 274px;
+}
+.footer-area, .footer-area a{
+    color:#fff;
+}
+.footer-area a, .footer-area p{opacity: .7;}
+.footer-area h2 a{opacity:1;}
+.footer-logo{
+    font-size: 22px;
+    text-transform: uppercase;
+    display:inline-block;
+    position: relative;
+}
+.footer-logo span{
+    position: absolute;
+    right: -12px;
+    font-size: 10px;
+    top:2px;
+}
+.footer-logo h2{font-size: 22px;}
+.footer-area ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+/* CSS for Off Canvas Menu */
+.offcanvs-menu{
+    position: fixed;
+    right:-40%;
+    top:0;
+    height: 100%;
+    width:40%;
+    z-index: 99;
+    background-color: #fff;
+    padding:40px;
+    transition:.4s;
+}
+.active{right:0;}
+.men-bottom-section{
+    position: absolute;
+    bottom: 70px;
+    left: 60;
+    max-width: 315px;
+}
+.offcanvas-boxed-text{
+    background-color: #efebff;
+    padding:5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.social-icons a{
+    color: #5f5c5f;
+    font-size: 24px;
+    display: inline-block;
+    padding-right: 10px;
+}
+.social-icons{
+    margin-top: 24px;
+}
+.offcanvs-menu ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    margin-left:20px;
+}
+.offcanvs-menu li a{
+    color:#100060;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+}
+.menu-item-wrap{
+    display: table;
+    height: 100%;
+    width:100%;
+}
+.menu-item-inner{
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 200px;
+}
+.menu-close{
+    position: absolute;
+    right: 0;
+    width:70px;
+    border-left: 1px solid #e4e4e4;
+    height: 100%;
+    top:0;
+}
+.menu-close i.fa{
+    position: absolute;
+    left: 0;
+    width:100%;
+    text-align: center;
+    top:50%;
+    line-height: 40px;
+    font-size: 27px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.offcanvs-menu-overlay{
+    position: fixed;
+    height: 100%;
+    width:60%;
+    left: 0;
+    content:"";
+    background-color: #100060;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+.offcanvs-menu-overlay.active{
+    opacity: .2;
+    visibility:visible;
+}
+/* smart menu use https://github.com/WickyNilliams/headroom.js */
+.header-area.headroom--pinned {
+    position: fixed;
+    background: #c4d8c496;
+}
+.sapart-line{
+    position: relative;
+    z-index: 1;
+}
+.sapart-line::before{
+    position: absolute;
+    left: 0;
+    top:-8px;
+    width: 100%;
+    height: 2px;
+    content:"";
+    background-color:#ddd;
+    opacity: .4;
+}
+.sapart-line::after{
+    position: absolute;
+    left: -70%;
+    top:-8px;
+    width: 100%;
+    height: 2px;
+    content:"";
+    background-color:#ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition:.4s;
+}
+.footer-area h2.sapart-line:hover::after{
+    opacity: .7;
+    left:0;
+    visibility: visible;
+    z-index: 4;
+}
+/* RRF 150 Section Video_123-126 # 7/2/2020 3:07pm End  */
