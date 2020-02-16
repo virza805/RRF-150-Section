@@ -1,0 +1,932 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+body{
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif; */
+    
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.714;
+    color: #626262;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: 0 solid;
+}
+input:focus, a:focus,button:focus,textarea:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+.section-padding{padding:80px 0;}
+/*******************
+=== Main-Menu ====
+********************/
+.header-area{
+    padding:40px 30px;
+}
+.absolute-menu{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    z-index: 9;
+    position: fixed;
+}
+/* Start Now mainmenu-area */
+.mainmenu-area ul{
+    background-color: #26395a;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.mainmenu-area li{
+    display:inline-block;
+    position: relative;
+}
+.mainmenu-area li a{
+    display:block;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+}
+/* drop down menu Style start */
+.mainmenu-area li{
+    position: relative;
+}
+.mainmenu-area li ul{
+    position: absolute;
+    left:0;
+    top:22px;
+    width:200px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.mainmenu-area li ul li a{
+    text-transform: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mainmenu-area li ul li{
+    display:block;
+}
+.mainmenu-area li ul li a{
+    text-transform: none;
+    transition:.3s;
+}
+.mainmenu-area li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top:52px;
+}
+.mainmenu-area ul li:hover >a{
+    background-color: green;
+    color:#fff;
+}
+/* Maltry drop down menu Style start */
+.mainmenu-area li:hover ul ul{
+    opacity: 0;
+    visibility: hidden;
+    top:52px;
+}
+.mainmenu-area ul ul li ul{
+    left:200px;  
+}
+.mainmenu-area ul ul li:hover> ul{
+    left:200px;
+    top:0;
+    opacity: 1;
+    visibility: visible;
+}
+/* End Main Menu */
+
+
+
+
+.menu-main li.mea-menu{
+    position:static;
+}
+.menu-main li.mea-menu ul{
+    position: relative;
+    left:auto;
+    top:auto;
+    opacity: 1;
+    visibility:visible;
+    padding:0;
+    width:auto;
+}
+.mega-menu-wrapper{
+    left: 0;
+    position: absolute;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    z-index: -1;
+    box-shadow:0 0 5px #170b44;
+    top:86px;
+    opacity: 0;
+    visibility:hidden;
+    transition: .3s;
+}
+.menu-main li.mea-menu:hover .mega-menu-wrapper{
+    opacity: 1;
+    visibility: visible;
+    top:70px;
+    z-index: 99;
+}
+.logo-img a img{
+    max-height: 50px;
+    margin:10px 0;
+}
+.img-hover{
+    transition: .4s;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+background-size: cover;
+background-position: center;
+}
+.img-hover:hover {
+    transition: .4s;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.boxed-btn{
+    margin:10px 0;
+    padding:10px 15px;
+    background-color: #626262;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+    position: absolute;
+    right:4px;
+}
+
+
+
+/* Main Menu Right */
+.menu-trigger{
+    display:inline-block;
+    width:30px;
+    height: 2px;
+    background-color:#000000;
+    border-radius: 3px;
+    text-align: right;
+    position: relative;
+}
+.menu-trigger::before, .menu-trigger::after{
+    position:absolute;
+    top: 7px;
+    left: 0;
+    width:30px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+}
+.menu-trigger::after{
+    top:-7px;
+}
+.menu-btn:hover .menu-trigger::after, .menu-btn:hover  .menu-trigger::before{
+    left: 5px;
+    width: 20px;
+}
+/* CSS for Off Canvas Menu */
+.offcanvs-menu{
+    position: fixed;
+    right:-40%;
+    top:0;
+    height: 100%;
+    width:40%;
+    z-index: 99;
+    background-color: #fff;
+    padding:40px;
+    transition:.4s;
+}
+.active{right:0;}
+.men-bottom-section{
+    position: absolute;
+    bottom: 70px;
+    left: 60;
+    max-width: 315px;
+}
+.offcanvas-boxed-text{
+    background-color: #efebff;
+    padding:5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.social-icons a{
+    color: #5f5c5f;
+    font-size: 24px;
+    display: inline-block;
+    padding-right: 10px;
+}
+.social-icons{
+    margin-top: 24px;
+}
+.offcanvs-menu ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    margin-left:20px;
+}
+.offcanvs-menu li a{
+    color:#100060;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+}
+.menu-item-wrap{
+    display: table;
+    height: 100%;
+    width:100%;
+}
+.menu-item-inner{
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 200px;
+}
+.menu-close{
+    position: absolute;
+    right: 0;
+    width:70px;
+    border-left: 1px solid #e4e4e4;
+    height: 100%;
+    top:0;
+}
+.menu-close i.fa{
+    position: absolute;
+    left: 0;
+    width:100%;
+    text-align: center;
+    top:50%;
+    line-height: 40px;
+    font-size: 27px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.offcanvs-menu-overlay{
+    position: fixed;
+    height: 100%;
+    width:60%;
+    left: 0;
+    content:"";
+    background-color: #100060;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+.offcanvs-menu-overlay.active{
+    opacity: .2;
+    visibility:visible;
+}
+/* smart menu use https://github.com/WickyNilliams/headroom.js */
+.header-area.headroom--pinned {
+    position: fixed;
+    background: #c4d8c496;
+}
+
+
+.sapart-line{
+    position: relative;
+    z-index: 1;
+}
+.sapart-line::before{
+    position: absolute;
+    left: 0;
+    top:-8px;
+    width: 100%;
+    height: 2px;
+    content:"";
+    background-color:#ddd;
+    opacity: .4;
+}
+.sapart-line::after{
+    position: absolute;
+    left: -70%;
+    top:-8px;
+    width: 100%;
+    height: 2px;
+    content:"";
+    background-color:#ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition:.4s;
+}
+.footer-area h2.sapart-line:hover::after{
+    opacity: .7;
+    left:0;
+    visibility: visible;
+    z-index: 4;
+}
+/*******************
+=== Main-Menu ====
+********************/
+/* CSS Section Clipping Images # 14/2/2020 11:54pm Start */
+.clip-img-1{
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.clip-img-2{
+    -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+.clip-img-3{
+    -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+.clip-img-4{
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.clip-img-5{
+    -webkit-clip-path: polygon(0 29%, 39% 27%, 55% 0, 60% 25%, 100% 24%, 100% 100%, 0 100%);
+    clip-path: polygon(0 29%, 39% 27%, 55% 0, 60% 25%, 100% 24%, 100% 100%, 0 100%);
+}
+.clip-img-6{}
+/* 
+https://bennettfeely.com/clippy/ 
+
+CSS Section Clipping Images # 15/2/2020 12:07am End */
+
+/* CSS Section Slide Images # 15/2/2020 12:37am On */
+.bg-1{background-image: url(../img/Eid-Mubarock.png);}
+.bg-2{background-image: url(../img/eid.jpg);}
+.bg-3{background-image: url(../img/profil_ca.jpg);}
+.bg-4{background-image: url(../img/Rose.jpg);}
+
+.bg-img {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.slide-content{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(35, 139, 225, 0.8);
+    padding:20px;
+    color:#fff;
+    box-sizing: border-box;
+    transition: transform .3s ease;
+}
+.slide:hover .slide-content{
+    transform:translate(0, 0);
+}
+/*Directions*/
+.slide-left .slide-content{
+    transform: translate(-100%, 0);
+}
+.slide-right .slide-content{
+    transform: translate(100%, 0);
+}
+.slide-top .slide-content{
+    transform: translate(0, -100%);
+}
+.slide-bottom .slide-content{
+    transform: translate(0, 100%);
+}
+
+
+
+/*CSS Section Slide Images # 15/2/2020 12:37am End*/
+/*# ======Animation====== # Start*/
+.shadow{
+	text-shadow: 6px 10px 4px green;
+	text-align:center;
+	margin-top:40px;
+	font-size:50px;
+    color:red;
+    font-weight: 700;
+    letter-spacing: 30px;
+}
+
+.animat-wra{
+    position: relative;
+    z-index: 1;
+    padding:50px 0;
+}
+.animat{
+	
+	margin-top:10px;
+	width:250px;
+	height:150px;
+	background-color:orangered;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+	border:1px solid black;
+	
+	animation-name:tanvir;
+	animation-duration:16s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	position: absolute;
+	
+}
+ 
+@keyframes tanvir {
+	0%     {background-color:orangered; left:0px; top:0px;}
+	25%  {background-color:yellow; left:800px; top:0px;}
+	50%  {background-color: yellowgreen; left:800px; top:50px;}
+	75%  {background-color: #4267B2; left:400px; top:50px;}
+	100% {background-color:orangered; left:0px; top:50px;}
+} 
+/*# ======Animation====== # End*/
+/*CSS Section JAMPING # 15/2/2020 9:29am Start*/
+
+#logo_left h2{
+	transform:translate(-50%,-50%);
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	/*
+	top:7%;
+	left:31%;
+	*/
+	
+	}
+#logo_left h2 span{
+	color:#262626;
+	background:#fff;
+	padding:10px 15px;
+	font-family:arial;
+	display:table-cell;
+	box-shadow:inset 0 0 5px rgba(0,0,0,.3),0 5px 0 #ccc;
+animation: animate 2s infinite;
+}
+
+	@keyframes animate{
+		0%{
+			transform:translateY(0px);
+			box-shadow:inset 0 0 5px rgba(0,0,0,.3),0 5px 0 #ccc,0 15px 5px rgba(0,0,0,0);
+		}
+		50%{
+			transform:translateY(-20px);
+			box-shadow:inset 0 0 5px rgba(0,0,0,.3),0 5px 0 #ccc,0 15px 5px rgba(0,0,0,.6);
+		}
+		100%{
+			transform:translateY(0px);
+			box-shadow:inset 0 0 5px rgba(0,0,0,.3),0 5px 0 #ccc,0 15px 5px rgba(0,0,0,0);
+		}
+
+	}
+#logo_left h2 span:nth-child(1){
+	animation-delay:.6s;
+}
+#logo_left h2 span:nth-child(2){
+	animation-delay:1.2s;
+}
+#logo_left h2 span:nth-child(3){
+	animation-delay:1.8s;
+}
+#logo_left h2 span:nth-child(4){
+	animation-delay:2.4s;
+}
+#logo_left h2 span:nth-child(5){
+	animation-delay:3s;
+}
+#logo_left h2 span:nth-child(6){
+	animation-delay:3.6s;
+}
+/*CSS Section JAMPING # 15/2/2020 12:37am End*/
+/* CSS Section Position # 15/2/2020 9:37am Start*/
+.box{
+	background-color:#4267B2;
+	width:300px;
+	height:300px;
+	margin:auto;
+	margin-top:150px;
+	margin-bottom:150px;
+    position:relative;
+    /* vertical-align: middle; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+
+}
+.box:hover{
+	background-color:yellow;
+	transform:rotate(45deg);
+	transition:1s;
+}
+.box:hover h1{
+    transform:rotate(-45deg);
+    color:#000;
+}
+.box:after{
+	content:'';
+	display:block;
+	clear:both;
+	background-color:orangered;
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:100%;
+	top:100%;
+}
+.box:hover:after{
+	left:-100px;
+	top:-100px;
+	transition:1s;
+}
+.box:before{
+	content:'';
+	display:block;
+	clear:both;
+	background-color:yellowgreen;
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:-100px;
+	top:-100px;
+}
+.box:hover:before{
+	left:100%;
+	top:100%;
+	transition:1s;
+	
+}
+#poisition-roat{
+    	
+	margin-top:10px;
+    
+	background-color:orangered;
+	
+	
+	animation-name:virza;
+	animation-duration:16s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	
+}
+ 
+@keyframes virza {
+	0%     {background-color:orangered;}
+	25%  {background-color:yellow;}
+	50%  {background-color: yellowgreen;}
+	75%  {background-color: #ddd;}
+	100% {background-color:orangered;}
+} 
+/*CSS Section Position # 15/2/2020 12:37am End*/
+/*CSS Section News Bar # 15/2/2020 9:23am Start*/
+.news_inner{
+    position: relative;
+    z-index: 1;
+}
+.br_desc{
+    position: absolute;
+    left: 0;
+    top:15px;
+    z-index: -1;
+    width:100%;
+    vertical-align: middle;
+}
+.br_desc marquee{
+    font-size: 25px;
+}
+/*CSS Section News Bar # 15/2/2020 9:23am  End*/
+/* CSS Section Button # 14/2/2020 8:39am Start */
+button{
+    cursor: pointer;
+    font-weight: bold;
+    margin:0 15px 0 0;
+}
+.facebook-style-btn{
+    border-radius:2px;
+    font-size: 14px;
+    padding:6px 12px;
+}
+.facebook-style-dark{
+    -moz-box-shadow: inset 0 1px 0 0 #4d73bf;
+    -webkit-box-shadow: inset 0 1px 0 0 #4d73bf;
+    box-shadow: inset 0 1px 0 0 #4d73bf;
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+    color:white;
+    text-shadow: 0 1px 0 #3359a5;
+}
+.facebook-style-dark:hover{
+    background-color: #2b54a7;
+}
+.facebook-style-dark:active{
+    background-color: #1d4698;
+    border-color: #1d4698;
+}
+/* end .facebook-style-dark */
+.facebook-style-light{
+    background-color: #f6f7f9;
+    border: 1px solid #ced0d4;
+    color:#4b4f56;
+}
+.facebook-style-light:hover{
+    background-color: #e9ebee;
+}
+.facebook-style-light:active{
+    background-color: #d8dade;
+    border-color:#d8dade;
+}
+/* === 3D Button ===  */
+.btn-3d-1{
+    position: relative;
+    background-color: orangered;
+    border:none;
+    color: white;
+    padding:15px 24px;
+    font-size: 20px;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+}
+.btn-3d-1:hover{background-color: hsl(16, 100%, 45%);}
+.btn-3d-1:active{
+    background: hsl(16, 100%, 40%);
+    top:3px;
+}
+.btn-3d-1::before{
+    position: absolute;
+    display:block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #992900;
+    top: -3px;
+    left: -5px;
+    transform: rotate(190deg);
+}
+.btn-3d-1::after{
+    position: absolute;
+    display:block;
+    content:"";
+    height: 6px;
+    width: 0;
+    border: 7px solid transparent;
+    border-top: solid hsl(16, 100%, 30%);
+    border-bottom-width: 0px;
+    right: 0;
+    bottom: -6px;
+}
+
+.btn-3d-2{
+    position: relative;
+    background-color: #ecd300;
+    font-size: 17px;
+    text-shadow: 1px solid hsl(54, 100%, 20%);
+    color:#fff;
+    border-radius: 100%;
+    height: 120px;
+    width:120px;
+    z-index: 4;
+    outline: none;
+    box-shadow:inset 0 1px 0 hsl(54, 100%, 50%),
+    inset 0 1px 0 hsl(54, 100%, 20%),inset 0 1px 0 hsl(54, 100%, 18%),inset 0 1px 0 hsl(54, 100%, 16%),inset 0 1px 0 hsl(54, 100%, 14%),inset 0 1px 0 hsl(54, 100%, 12%),inset 0 1px 0 hsl(54, 100%, 10%),inset 0 1px 0 hsl(54, 100%, 8%),inset 0 1px 0 hsl(54, 100%, 6%);
+}
+/* Gradient Bordered Buttons */
+.gradient-button-1{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding:20px 40px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color:orangered;
+}
+.gradient-button-1::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -2;
+    background: #ff2b0f;
+    background: -moz-linear-gradient(45deg,  hsl(7,100%,53%) 0%, hsl(56,98%,53%) 83%, hsl(55,94%,62%) 100%);
+    background: -webkit-linear-gradient(45deg,  hsl(7,100%,53%) 0%,hsl(56,98%,53%) 83%,hsl(55,94%,62%) 100%);
+    background: linear-gradient(45deg,  hsl(7,100%,53%) 0%,hsl(56,98%,53%) 83%,hsl(55,94%,62%) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2b0f', endColorstr='#f9ea40',GradientType=1 );
+}
+.gradient-button-1::after{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 60%;
+    content: "";
+    z-index: -1;
+    background-color: #fff;
+}
+.gradient-button-1:hover::after{
+    background-color: transparent;
+    color:#fff;
+}
+.gradient-button-1:hover{
+    color:#fff;
+}
+
+.gradient-button-2{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding:20px 40px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color:orangered;
+    margin: 10px;
+}
+.gradient-button-2::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -2;
+    background: #a0d8ef;
+background: -moz-linear-gradient(left,  hsla(197,71%,78%,1) 0%, hsla(197,70%,92%,1) 67%, hsla(180,100%,100%,1) 100%);
+background: -webkit-linear-gradient(left,  hsla(197,71%,78%,1) 0%,hsla(197,70%,92%,1) 67%,hsla(180,100%,100%,1) 100%);
+background: linear-gradient(to right,  hsla(197,71%,78%,1) 0%,hsla(197,70%,92%,1) 67%,hsla(180,100%,100%,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0d8ef', endColorstr='#feffff',GradientType=1 );
+
+
+}
+.gradient-button-2::after{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 60%;
+    content: "";
+    z-index: -1;
+    background-color: #fff;
+}
+.gradient-button-2:hover::after{
+    background-color: transparent;
+    color:#fff;
+}
+.gradient-button-2:hover{
+    color:#fff;
+}
+/* animated-button-1 */
+.animated-button-1{
+    position: relative;
+    display: inline-block;
+    padding:20px 40px;
+    font-size:18px;
+    /* background-color:#00b3b4; */
+    background-image: url(../img/debut-light.png);
+    background-size: 40px 40px;
+    border:1px solid #555;
+    color:#fff;
+    transition:all ease .3s;
+}
+
+/* Toggle Switch Button */
+.toggle-1{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+.toggle-1_input{
+    display: none;
+}
+.toggle-1_button{
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: #f2395a;
+    border: 1px solid #f2395a;
+    color:#fff;
+    width:80px;
+    height: 30px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.toggle-1_button::before{
+    position: absolute;
+    top:5px;
+    left:38px;
+    content: "off";
+    display: inline-block;
+    height: 20px;
+    padding:0 3px;
+    background-color: #fff;
+    color:#f2395a;
+    transition: all .3s ease;
+}
+
+.toggle-1_input:checked + .toggle-1_button{
+    background-color: #00b3b4;
+    border:1px solid #00b3b4;
+}
+.toggle-1_input:checked + .toggle-1_button::before{
+    left:5px;
+    content:"on";
+    color:#00b3b4;
+    text-transform: uppercase;
+}
+/* Toggle Switch Button 2 */
+.toggle-2{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+    font-size: .8rem;
+}
+
+.toggle-2_input{
+    display: none;
+}
+.toggle-2_button{
+    position: relative;
+    display: inline-block;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color:#aaa;
+    border: 1px solid #ccc;
+    padding:5px 10px 5px 30px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.toggle-2_button::before{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: inline-block;
+    width:10px;
+    height: 10px;
+    background-color: #ccc;
+    content:"";
+    transition: all .3s ease;
+    border: 100%;
+}
+.toggle-2_input:checked + .toggle-2_button{
+    background-color: #00b3b4;
+    border:1px solid #00b3b4;
+    color:#fff;
+}
+.toggle-2_input:checked + .toggle-2_button::before{
+    background-color: #fff;
+}
+/* CSS Section Button # 14/2/2020 11:10pm End */

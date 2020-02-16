@@ -18,34 +18,57 @@
     </style>
   </head>
   <body>
-      <!-- RRF 150 Section Video_58 # 15/1/2020 12:49am End-->
+<!-- RRF 150 Section Video_58 # 15/1/2020 12:49am End-->
 <!-- Google API key 
 AIzaSyBV5MeyGwHk16XNoM144UXc9fXxbAz793Y -->
 <section id="v_58">
-    <div class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div id="googleMap" style="width:100%;height:400px;"></div>
-  
-  
-            <script>
-              function myMap() {
-              var mapProp= {
-                center:new google.maps.LatLng(23.850823,90.275803),
-                zoom:16,
-              };
-              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-              }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV5MeyGwHk16XNoM144UXc9fXxbAz793Y&callback=myMap"></script>
-          </div>
+  <div class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="googleMap" style="width:100%;height:400px;"></div>
+
+
+          <script>
+            function myMap() {
+            var mapProp= {
+              center:new google.maps.LatLng(23.8521753,90.2835775),
+              zoom:16,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV5MeyGwHk16XNoM144UXc9fXxbAz793Y&callback=myMap"></script>
         </div>
       </div>
     </div>
-  </section>
-  <!-- RRF 150 Section Video_58 # 15/1/2020 1:24am End-->
+  </div>
+</section>
+<!-- RRF 150 Section Video_58 # 15/1/2020 1:24am End
+https://www.w3schools.com/graphics/tryit.asp?filename=trymap_intro
+-->
 
+  <h1>My First Google Map w3_School</h1>
+
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+  
+  <script>
+  function myMap() {
+  var mapProp= {
+      center:new google.maps.LatLng(23.8521753,90.2835775),
+      zoom:16,
+      scrollWheel: false
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  }
+  </script>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <!--
+  To use this code on your website, get a free API key from Google.
+  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
+  
   
 
 
