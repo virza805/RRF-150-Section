@@ -1,0 +1,28 @@
+{
+  "name": "npm-demo",
+  "version": "1.0.0",
+  "description": "NPM Laren for JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "23-3-2020",
+    "start": "node app.js",
+    "server": "live-server"
+
+  },
+  "keywords": [
+    "JavaScript",
+    "React",
+    "WP",
+    "WP-speed",
+    "noode.js"
+  ],
+  "author": "Tanvir Hasan",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
