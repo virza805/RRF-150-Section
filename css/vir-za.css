@@ -1,0 +1,874 @@
+/*!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* Base CSS */
+.alignleft{
+    float: left;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto 15px;
+}
+body{
+    /*
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Calligraffitti', cursive;
+    font-family: 'Open Sans', sans-serif;
+*/
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.714;
+    color: #626262;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a, a:hover{
+    text-decoration: none;
+}
+a:focus{
+    outline: 0 solid;
+}
+input:focus, a:focus,button:focus,textarea:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+.section-padding{padding:80px 0;}
+/*******************
+=== Main-Menu ====
+********************/
+.header-area{
+    padding:40px 30px;
+}
+.absolute-menu{
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    z-index: 9;
+    position: fixed;
+    background-color: #c4d8c496;
+}
+/* Start Now mainmenu-area */
+.mainmenu-area ul{
+    background-color: #26395a;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.mainmenu-area li{
+    display:inline-block;
+    position: relative;
+}
+.mainmenu-area li a{
+    display:block;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+}
+.absolute-menu .menu-main > ul{
+    background-color: transparent;
+}
+
+/* drop down menu Style start */
+.mainmenu-area li{
+    position: relative;
+}
+.mainmenu-area li ul{
+    position: absolute;
+    left:0;
+    top:22px;
+    width:200px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.mainmenu-area li ul li a{
+    text-transform: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mainmenu-area li ul li{
+    display:block;
+}
+.mainmenu-area li ul li a{
+    text-transform: none;
+    transition:.3s;
+}
+.mainmenu-area li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top:52px;
+}
+.mainmenu-area ul li:hover >a{
+    background-color: green;
+    color:#fff;
+}
+/* Maltry drop down menu Style start */
+.mainmenu-area li:hover ul ul{
+    opacity: 0;
+    visibility: hidden;
+    top:52px;
+}
+.mainmenu-area ul ul li ul{
+    left:200px;  
+}
+.mainmenu-area ul ul li:hover> ul{
+    left:200px;
+    top:0;
+    opacity: 1;
+    visibility: visible;
+}
+/* End Main Menu */
+
+.menu-main li.mea-menu{
+    position:static;
+}
+.menu-main li.mea-menu ul{
+    position: relative;
+    left:auto;
+    top:auto;
+    opacity: 1;
+    visibility:visible;
+    padding:0;
+    width:auto;
+}
+.mega-menu-wrapper{
+    left: 0;
+    position: absolute;
+    width:100%;
+    background:#fff;
+    padding:20px;
+    z-index: -1;
+    box-shadow:0 0 5px #170b44;
+    top:86px;
+    opacity: 0;
+    visibility:hidden;
+    transition: .3s;
+}
+.menu-main li.mea-menu:hover .mega-menu-wrapper{
+    opacity: 1;
+    visibility: visible;
+    top:70px;
+    z-index: 99;
+}
+.logo-img a img{
+    max-height: 50px;
+    margin:10px 0;
+}
+.img-hover{
+    transition: .4s;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+background-size: cover;
+background-position: center;
+}
+.img-hover:hover {
+    transition: .4s;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.boxed-btn{
+    margin:10px 0;
+    padding:10px 15px;
+    background-color: #626262;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 15px;
+    position: absolute;
+    right:4px;
+}
+
+
+
+/* Main Menu Right */
+.menu-trigger{
+    display:inline-block;
+    width:30px;
+    height: 2px;
+    background-color:#000000;
+    border-radius: 3px;
+    text-align: right;
+    position: relative;
+}
+.menu-trigger::before, .menu-trigger::after{
+    position:absolute;
+    top: 7px;
+    left: 0;
+    width:30px;
+    height: 2px;
+    content: "";
+    background-color: #000;
+}
+.menu-trigger::after{
+    top:-7px;
+}
+.menu-btn:hover .menu-trigger::after, .menu-btn:hover  .menu-trigger::before{
+    left: 5px;
+    width: 20px;
+}
+/* CSS for Off Canvas Menu */
+.offcanvs-menu{
+    position: fixed;
+    right:-40%;
+    top:0;
+    height: 100%;
+    width:40%;
+    z-index: 99;
+    background-color: #fff;
+    padding:40px;
+    transition:.4s;
+}
+.active{right:0;}
+.men-bottom-section{
+    position: absolute;
+    bottom: 70px;
+    left: 60;
+    max-width: 315px;
+}
+.offcanvas-boxed-text{
+    background-color: #efebff;
+    padding:5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.social-icons a{
+    color: #5f5c5f;
+    font-size: 24px;
+    display: inline-block;
+    padding-right: 10px;
+}
+.social-icons{
+    margin-top: 24px;
+}
+.offcanvs-menu ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    margin-left:20px;
+}
+.offcanvs-menu li a{
+    color:#100060;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+}
+.menu-item-wrap{
+    display: table;
+    height: 100%;
+    width:100%;
+}
+.menu-item-inner{
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 200px;
+}
+.menu-close{
+    position: absolute;
+    right: 0;
+    width:70px;
+    border-left: 1px solid #e4e4e4;
+    height: 100%;
+    top:0;
+}
+.menu-close i.fa{
+    position: absolute;
+    left: 0;
+    width:100%;
+    text-align: center;
+    top:50%;
+    line-height: 40px;
+    font-size: 27px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.offcanvs-menu-overlay{
+    position: fixed;
+    height: 100%;
+    width:60%;
+    left: 0;
+    content:"";
+    background-color: #100060;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+.offcanvs-menu-overlay.active{
+    opacity: .2;
+    visibility:visible;
+}
+/* smart menu use https://github.com/WickyNilliams/headroom.js */
+.header-area.headroom--pinned {
+    position: fixed;
+    background: #c4d8c496;
+}
+
+
+.sapart-line{
+    position: relative;
+    z-index: 1;
+}
+.sapart-line::before{
+    position: absolute;
+    left: 0;
+    top:-8px;
+    width: 100%;
+    height: 2px;
+    content:"";
+    background-color:#ddd;
+    opacity: .4;
+}
+.sapart-line::after{
+    position: absolute;
+    left: -70%;
+    top:-8px;
+    width: 100%;
+    height: 2px;
+    content:"";
+    background-color:#ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition:.4s;
+}
+.footer-area h2.sapart-line:hover::after{
+    opacity: .7;
+    left:0;
+    visibility: visible;
+    z-index: 4;
+}
+
+/*******************
+=== Main-Menu ====
+********************/
+
+.slide-bg-1{background-image: url(../img/s_91_100.jpg);}
+.slide-bg-2{background-image: url(../img/screenshot.jpg);}
+.slide-bg-3{background-image: url(../img/slider.jpg);}
+
+.single-slide-item .d-table-cell{
+    vertical-align: middle;
+}
+.single-slide-item {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    background-color: #ddd;
+    color:#fff;
+    font-size: 16px;
+    line-height: 2;
+}
+.single-slide-item::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    /* background-color: #050505; */
+    content: "";
+    opacity: .8;
+    left: 0;
+    top: 0;
+}
+.single-slide-item::after {
+    background: #0f4779;
+background: -moz-linear-gradient(-45deg,  hsla(208,78%,27%,1) 0%, hsla(321,58%,29%,1) 100%);
+background: -webkit-linear-gradient(-45deg,  hsla(208,78%,27%,1) 0%,hsla(321,58%,29%,1) 100%);
+background: linear-gradient(135deg,  hsla(208,78%,27%,1) 0%,hsla(321,58%,29%,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f4779', endColorstr='#761f57',GradientType=1 );
+
+}
+.single-slide-item h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.bttn{
+    display:inline-block;
+    background-color: #fc721e;
+    border: 1px solid #fc721e;
+    color:#fff;
+    padding:8px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-top:30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.bttn.bordered-btn{
+    background-color:transparent;
+    border-color:#fff;
+    margin-left:15px;
+    text-align: left;
+}
+.bttn:before {
+    content: '';
+    display: block;
+    clear: both;
+    background-color: #fdfdfd;
+    width: 150%;
+    height: 2px;
+    position: absolute;
+    left: -100px;
+    top: -20px;
+    transform:rotate(150deg);
+    transition:2s;
+    box-shadow: 0 8px 12px #ffffff;
+    
+}
+.bttn:hover::before{
+    box-shadow: 0 8px 12px #ffffff;
+    left: 100px;
+    top: 30px;
+}
+.bttn:hover{
+    box-shadow: 0px 0px 14px #ffffff;
+    color: #07aa30;
+
+}
+.slider-area .owl-dots {
+    position: absolute;
+    left:0;
+    bottom:40px;
+    text-align: center;
+    width: 100%;
+}
+.slider-area .owl-dots button {
+    width: 2px;
+    height: 25px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 8px;
+}
+.slider-area .owl-dots button.active {
+    width: 2px;
+    height: 30px;
+    background-color: #fc721e;
+}
+
+/*******************
+=== End Slider ====
+********************/
+
+.single-slide-item.widthut-slider{
+    height: 400px;
+}
+.size-400 h1{
+    font-family: 'Raleway', sans-serif;
+}
+.title{
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 600;
+    color:#0F4779;
+    margin-top:30px;
+    position: relative;
+}
+.title b{
+    color:#761F57;
+}
+.title::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #afafaf;
+    content:'';
+}
+.title::after{
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 70px;
+    height: 2px;
+   background-color: #afafaf;
+   content:'';
+}
+.title-des{
+    position: relative;
+    margin-bottom: 60px;
+}
+.title-des::before {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    background-color: #afafaf;
+    content: '';
+    width: 2px;
+    height: 100%;
+}
+/* RRF 150 Section-5 # 27/1/2020 12:14pm Start */
+.single-service-boxs{
+    display:block;
+    border-radius: 3px;
+    border:2px solid #e8e8e8;
+    padding:30px;
+    text-align:center;
+    position: relative;
+    color:#333;
+    padding-top:60px;
+    margin-bottom: 70px;
+}
+.single-service-boxs::before {
+    position: absolute;
+    right: -5px;
+    top: -50px;
+    width: 50%;
+    height: 45%;
+    background-color: white;
+    content: '';
+}
+.service-icon{
+    position: absolute;
+    width:70px;
+    height:70px;
+    background-color:#54be73;
+    color:#fff;
+    font-size: 30px;
+    line-height: 70px;
+    border-radius:50%;
+    left:50%;
+    margin-left:-35px;
+    top:-35px;
+    border: 2px solid #fc721e;
+}
+.single-service-boxs p{
+    margin:0;
+}
+.single-service-boxs h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.single-service-boxs:hover{
+    color:#54be73;
+}
+/* RRF 150 Section-5 # 27/1/2020 12:27pm End */
+
+
+
+
+
+
+
+
+/* RRF 150 Section Video_6 # 19/8/2019 8:23am # End Video_6 */
+.v_6_margin{
+    margin: 50px 0;
+
+}
+.v_6_margin .section-title h2 span{
+    color: #05bd27;
+    font-weight: 700;
+}
+.single-pricing-box{
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+.single-pricing-box:hover{
+    border:#2fa55e;
+    box-shadow: 0 0 50px #ccc;
+    color: #2fa55e;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.single-pricing-box h3{
+   
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricing-icon{
+    font-size: 60px;
+    margin-bottom:20px;
+}
+.pricing-icon ../img{
+    max-width: 64px;
+    max-height: 64px;
+}
+#price{
+    text-transform: none;
+}
+.pricing-lists{
+    text-align: left;
+    margin-bottom: 23px;
+}
+.pricing-lists ul{
+    margin: 0;
+    padding: 0;
+    list-style:outside none none;
+    padding-left: 16px;
+    line-height: 25px;
+}
+.pricing-lists ul li:before{
+    font-family: fontAwesome;
+    content:"\f00c";
+    color:#05bd27;
+    padding-right: 11px;
+}
+.pricing-lists ul li.off:before{
+    content:"\f00d";
+    color: red;
+}
+.bordered-btn{
+    display: inline-block;
+    border:1px solid #05bd27;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #333;
+    font-size: 18px;
+}
+.bordered-btn:hover{
+    display: inline-block;
+    border:1px solid #f55f08;;
+    padding: 10px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    background: #05bd27;
+}
+.pricing-lists ul li{
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.pricing-lists ul li :hover{
+    padding-left: 5px;
+}
+.single-pricing-box:hover .pricing-icon img{
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+/* RRF 150 Section Video_6 # 19/8/2019 am # End Video_6 */
+/* RRF 150 Section Video_7 # 16/1/2020 3:25am # Start */
+.staff-list {
+    margin-top: 110px;
+}
+.staff-list.owl-carousel .owl-item img {
+    display: inline-block;
+}
+.single-staff-item{
+    text-align:center;
+
+}
+.single-staff-item p{
+    padding: 0 10px 5px 10px;
+
+}
+.single-staff-item img{
+    max-width: 160px;
+    height:160px;
+    border-radius:50%;
+
+}
+.staff-meta{
+    font-size:12px;
+    color:#2b2929;
+    margin:20px;
+}
+.staff-meta h3{
+    font-size:20px;
+    color:#111111;
+    margin:10px;
+    text-transform:uppercase;
+}
+.staff-list .owl-nav{
+    position: absolute;
+    right:-20px;
+    top:-70px;
+}
+.staff-list .owl-nav .fa {
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+    background: #999;
+    text-align: center;
+    line-height: 40px; 
+    font-size: 20px;
+    margin-left:10px;
+}
+.staff-list .owl-nav .fa:hover {
+   color:white;
+    background: #66a7e8;
+}
+/* RRF 150 Section Video_7 # 16/1/2020 4:31am # End */
+/* RRF 150 Section Video_8 # 19/8/2019 am # Start Video_8 */
+.v_8_padding{
+    padding:80px 0; 
+}
+.gray-bg{
+    background-color: #fafafa;
+}
+.service-bg-1{background-image: url(../img/Tanvir_Hasan.jpg);}
+.service-bg-2{background-image: url(../img/v_2.jpg);}
+.service-bg-3{background-image: url(../img/v5.jpg);}
+.service-bg-4{background-image: url(../img/screenshot.jpg);}
+.single-dervice-item {
+    background: #fff;
+}
+.single-dervice-item:hover{
+    box-shadow:0 0 35px #9c9c9c;
+    transition: 0.2s;
+}
+.service-bg{
+    height: 225px;
+    background-color: #ddd;
+    background-position: center;
+    background-size: cover;
+}
+.service-contene {
+    padding: 25px 15px;
+  
+}
+.service-contene h3 {
+    font-size: 20px;
+}
+.service-contene p {
+    /* font-size: 20px; */
+    color: #9c9c9c;
+}
+a.service-more-btn{
+    display: inline-block;
+    padding: 10px 0;
+    border-radius: 50px;
+    margin-top: 7px;
+    font-weight: 700;
+    transition: 0.3s;
+    color:  #08a826;
+}
+a.service-more-btn:hover{
+    display: inline-block;
+    color: #fff;
+    background: #08a826;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 7px;
+    font-weight: 700;
+}
+a.service-more-btn i.fa{
+    padding-left: 6px;
+}
+/* RRF 150 Section Video_8 # 19/8/2019 am End*/
+/* RRF 150 Section Video_9 # 16/1/2020 2:04am Start*/
+.section-padding{
+    padding:100px 0;
+}
+
+.section-title span.title-end{
+    position: relative;
+    background-color: #333;
+    width:30px;
+    height:5px;
+    display: inline-block;
+    border-radius:10px;
+}
+.section-title span.title-end::before{
+    position: absolute;
+    background-color: #0dad1b;
+    width:50px;
+    height:5px;
+    top:0;
+    right: 40px;
+    content: "";
+    border-radius:10px;
+}
+.section-title span.title-end::after{
+    position: absolute;
+    background-color: #0dad1b;
+    width:50px;
+    height:5px;
+    top:0;
+    left: 40px;
+    content: "";
+    border-radius:10px;
+}
+.client-testimonial-carousel .owl-dots {
+    text-align: center;
+    margin: 60px 0;
+}
+.client-testimonial-carousel .owl-dots button.owl-dot {
+    width: 20px;
+    height: 5px;
+    background-color:#6aaf08; 
+    border-radius: 2px;
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+}
+.client-testimonial-carousel .owl-dots button.owl-dot.active {
+    width: 30px;
+    background-color:#101a02; 
+    
+}
+.single-testimonial-item{
+    box-shadow:0 0 2px #dadfd3;
+    margin:2px;
+    padding:20px;
+    font-style:italic;
+    position: relative;
+    padding-left: 81px;
+}
+.single-testimonial-item h3{
+    font-size: 20px;
+    font-style:normal;
+}
+.single-testimonial-item span{
+    display:block;
+    font-size:14px;
+    font-weight:normal;
+    margin-top:5px;
+}
+.single-testimonial-item::before{
+    font-family: 'FontAwesome';
+    content: "\f10e";
+    position: absolute;
+    color:#6aaf08;
+    font-size:20px;
+    left:19px;
+    line-height:30px;
+    margin-top:-15px;
+    top:50%;
+
+}
+.single-testimonial-item::after{
+    background:#dadfd3;;
+    content:"";
+    height: 70%;
+    left:60px;
+    position: absolute;
+    top:15%;
+    width:1px;
+
+}
+/* RRF 150 Section Video_9 # 16/1/2020 3:20am End*/
+
+
+
+
