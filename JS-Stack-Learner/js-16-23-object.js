@@ -209,7 +209,7 @@ person.print();
  * 
  * video = 20 & Lecture-5 2:46 pm 25/3/2020 Now I start javaScript
  * bind-call-apply JavaScript
- * 
+ * I have a Lack
  ******************* */
 // To Use bind (this is JavaScript mathood)
 
@@ -251,6 +251,106 @@ res2;
  * 
  * video = 21 & Lecture-6 2:46 pm 25/3/2020 Now I start javaScript
  * inharitant JavaScript
- * 
+ *  I have a Lack
  ******************* */
 // To Use inharitant (this is JavaScript mathood)
+// function Person(){
+//     this.name = "Tanvir Hasan"
+// }
+// function Teacher(){
+//     Person.call(this);
+//     this.subject = "JavaScript";
+// }
+
+// var teacher = new Teacher();
+// var name = teacher.name;
+// console.log(name);
+
+function Person(name){
+    this.name = name;
+}
+
+Person.prototype.printName = function(){
+    console.log('Name: ' +this.name);
+}
+Person.prototype.another = function(){
+    console.log('This is an another function');
+}
+function Student (name, id){
+    Person.call(this, name);
+    this.id = id;
+}
+
+Student.prototype = Object.create(Person.prototype);
+//Object.setPrototypeOf(Student.prototype, Person.prototype);
+Student.prototype.constructor = Student;
+var student = new Student('Onamica Afroza', 1991);
+Person.prototype.printName = function(){
+    console.log(this.name + 'Not Copied');
+}
+student.printName();
+/*******************
+ * 
+ * video = 22 & Lecture-7 2:46 pm 25/3/2020 Now I start javaScript
+ * new keyword JavaScript
+ * 
+ ******************* */
+// To Use new keyword (this is JavaScript mathood)
+function Animal(name){
+    this.name = name;
+}
+Animal.prototype.printName = function(){
+    console.log(this.name);
+    
+}
+
+function myNew(constructor){
+    var obj = {};
+    Object.setPrototypeOf(obj, constructor.prototype);
+    var argsArray = Array.prototype.slice.apply(arguments);
+    constructor.apply(obj, argsArray.slice(1));
+    return obj;
+}
+var cat = myNew(Animal, 'Cat');
+cat.printName();
+
+// var cat = new Animal('Cat');
+// var god = new Animal('Dog');
+
+// cat.printName();
+
+var Person = function(name, age){
+    this.name = name;
+    this.age = age;
+}
+
+var p1 = myNew(Person, 'Tanvir Hasan', 24);
+
+/*******************
+ * 
+ * video = 23 & Lecture-8 6:06 pm 25/3/2020 Now I start javaScript
+ * _proto_ vs Prototype JavaScript
+ * 
+ ******************* */
+// To Use _proto_ vs Prototype (this is JavaScript mathood)
+function Obj(a, b){
+    this.a = a;
+    this.b = b;
+}
+
+function Obj2(a, b, c){
+    P1.call(this, a, b);
+    this.c = c;
+}
+Obj2.prototype = Object.create(P1.prototype);
+
+function Obj3(){
+    Obj2.call(this, 10, 15, 20);
+}
+Obj3.prototype = Object.create(Obj2.prototype);
+
+//var obj1 = new Obj(1, 2);
+var obj2 = new Obj2(4, 5, 6);
+var obj3 = new Obj3();
+
+

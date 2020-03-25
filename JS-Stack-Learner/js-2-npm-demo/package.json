@@ -6,8 +6,9 @@
   "scripts": {
     "test": "23-3-2020",
     "start": "node app.js",
-    "server": "live-server"
-
+    "server": "live-server",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "JavaScript",
@@ -23,6 +24,7 @@
     "underscore": "^1.9.2"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "webpack-cli": "^3.3.11"
   }
 }
