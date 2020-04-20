@@ -20,7 +20,7 @@
 
 							if(isset($_GET['viewt'])){
 								echo "<h4>History Student Info Table</h4><br>";
-								$sql="select * from history where YEAR='{$_GET["year"]}'  ";
+								$sql="select * from history where YE='{$_GET["year"]}'  ";
 								$re=$db->query($sql);
 								if($re->num_rows>0){
 									echo '
@@ -50,16 +50,16 @@
 											<form enctype='multipart/form-data' role='form' method='post' action=' ' >
 												<td>{$i}</td>
 												
-												<td>{$r["RNO"]}</td>
+												<td>{$r["CRNO"]}</td>
 												
 												<td>{$r["NAME"]}</td>
 												<td class='p-2'>{$r["FNAME"]}</td>
 
-												<td>{$r["SCLASS"]}</td>
-												<td>{$r["SSEC"]}</td>
+												<td>{$r["CLASS"]}</td>
+												<td>{$r["SEC"]}</td>
 												<td></td>
 												 
-												<td><img src='{$r["SIMG"]}' alt='S. Img' height='70' width='70' class='p-2' ></td>
+												<td><img src='{$r["IMG"]}' alt='S. Img' height='70' width='70' class='p-2' ></td>
 											</form> 
 											</tr>
 										";

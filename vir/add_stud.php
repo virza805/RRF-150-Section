@@ -59,7 +59,8 @@
 
 							if(isset($_POST['submit'])){
 								$target="student/";
-								$target_file=$target.basename($_FILES["img"] ["name"]);
+								$file = $target.uniqid();
+								$target_file=$file.basename($_FILES["img"] ["name"]);
 
 								if(move_uploaded_file($_FILES["img"] ['tmp_name'] , $target_file)){
 
@@ -176,8 +177,10 @@
 				</div>
 				
 			</div>
+
+
+			
 		</div>
-		
 	</div>
 </div>
 

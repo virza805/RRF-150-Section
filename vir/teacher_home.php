@@ -121,6 +121,7 @@
 							
 							
 						</table>
+						<h2><a  class=" text-light " href="save_history_add_stud.php">Test History Databas insert</a></h2>
 					</div>
 				</div>
 				

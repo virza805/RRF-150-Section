@@ -21,7 +21,7 @@
             $(".projects-list").isotope({
                 filter: selector
             });
-        });
+        });// End Isotop # Video_29
 
     });
 

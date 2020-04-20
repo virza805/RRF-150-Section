@@ -73,7 +73,7 @@
        
 							if(isset($_POST['viewt'])){
 								echo "<h4>Student Info Table</h4><br>";
-								$sql="select * from student where SCLASS='{$_POST["cla"]}' and SSEC='{$_POST["sec"]}' ";
+								$sql="select * from student where SCLASS='{$_POST["cla"]}' and SSEC='{$_POST["sec"]}' order by CRNO asc ";
 								$re=$db->query($sql);
 								if($re->num_rows>0){
 									echo '

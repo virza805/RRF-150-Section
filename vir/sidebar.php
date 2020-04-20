@@ -2,6 +2,7 @@
 	<h2>Dashbord</h2>
 	<ul>
 		<li><a href="admin_home.php">School_Information</a></li>
+		<li><a href="admin_add_student.php">Add_Student</a></li>
 		<li><a href="add_class.php">Class</a></li>
 		<li><a href="add_sub.php">Subject</a></li>
 		<li><a href="add_staff.php">Staff</a></li>

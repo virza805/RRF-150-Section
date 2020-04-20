@@ -62,8 +62,9 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
+			<div class="col-md-3"></div>
+			<div class="col-md-3">
+			<h4><b class="text-info">For Change your Image</b></h4>
 			<?php
 							require_once('database.php');
 
@@ -93,19 +94,22 @@
 							</table>
 						</form>
 			</div>
-			<div class="col-md-4">
-					<h4><b class="text-info">View all Student in school</b></h4>
+			
+
+			<div class="col-md-12 fix"> 
+						<h2><b class="text-danger">This section use only one time in the year</b></h2>
+						<h4><b class="text-info">Save to History</b></h4>
 						
-						<?php 
-							if(isset($_GET["err"])){
-								echo "<div class='alert alert-danger'>{$_GET["err"]}</div>";
-							}
-						 ?>
+						  <?php 
+						  	if(isset($_GET["err"])){
+						  		echo "<div class='alert alert-danger'>{$_GET["err"]}</div>";
+						  	}
+						   ?>
 						<form  role="form" method="get" action="save_history.php"><br>
 							
 							<br>
 
-							<select type="text" name="year" required class="input form-control"> <br>
+							<select type="text" name="years" required class="input form-control"> <br>
 							<?php  
 							$sl="select DISTINCT(YEAR) from student ";
 							$r=$db->query($sl);
@@ -119,9 +123,46 @@
 							 ?>
 
 							 </select> <br>
-							 
+							  <br>
+							<input type="text" name="etype"  required placeholder="Enter Comment" required class="input form-control"> <br>
+
 							<button type="submit" class="btn btn-success" name="viewt">View Details </button> <br><br>
 						</form>  <br>
+						
+								
+					</div>
+
+
+
+
+
+
+			<div class="col-md-3">
+			<h4><b class="text-info">To test 1/1 save history</b></h4>
+			<?php 
+							if(isset($_GET["err"])){
+								echo "<div class='alert alert-danger'>{$_GET["err"]}</div>";
+							}
+						 ?>
+					  <form  role="form" method="get" action="save_history_1_.php"><br>
+						  
+					  <select type="text" name="year" required class="input form-control"> 
+				<?php  
+					$sl="select DISTINCT(RNO) from student ";
+					$r=$db->query($sl);
+					if($r->num_rows>0){
+						echo "<option value=''>Sleet Year</option>";
+							while($ro=$r->fetch_assoc()){
+								echo "<option value='{$ro["RNO"]}'>{$ro["RNO"]}</option>";
+						}
+					}
+
+				 ?>
+			 </select>
+						  
+						  <button type="submit" class="btn btn-success" name="viewt">View Details </button> <br><br>
+					  </form>  <br>
+					  
 			</div>
 		</div>
 		
@@ -131,7 +172,7 @@
 
 <div class="container">
 	<div class="col-md-6">
-	<h4><b class="text-info">View all Student in school</b></h4>
+	<h4><b class="text-info">View all Before/Old Student in school  Year by Year</b></h4>
 						
 						<?php 
 							if(isset($_GET["err"])){
@@ -144,12 +185,12 @@
 
 							<select type="text" name="year" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(YEAR) from history ";
+							$sl="select DISTINCT(YE) from history ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Year</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["YEAR"]}'>{$ro["YEAR"]}</option>";
+									echo "<option value='{$ro["YE"]}'>{$ro["YE"]}</option>";
 								}
 							}
 
@@ -170,12 +211,12 @@
 							<br>
 							<select type="text" name="cla" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(SCLASS) from history ";
+							$sl="select DISTINCT(CLASS) from history ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Class</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["SCLASS"]}'>{$ro["SCLASS"]}</option>";
+									echo "<option value='{$ro["CLASS"]}'>{$ro["CLASS"]}</option>";
 								}
 							}
 
@@ -183,12 +224,12 @@
 							 </select> <br>
 							 <select type="text" name="year" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(YEAR) from history ";
+							$sl="select DISTINCT(YE) from history ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Year</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["YEAR"]}'>{$ro["YEAR"]}</option>";
+									echo "<option value='{$ro["YE"]}'>{$ro["YE"]}</option>";
 								}
 							}
 
@@ -218,7 +259,7 @@
        
 							if(isset($_POST['viewt'])){
 								echo "<h4>Class {$_POST["cla"]} History Info - {$_POST["year"]}</h4><br>";
-								$sql="select * from history where SCLASS='{$_POST["cla"]}' and YEAR='{$_POST["year"]}' ";
+								$sql="select * from history where CLASS='{$_POST["cla"]}' and YE='{$_POST["year"]}' ";
 								$re=$db->query($sql);
 								if($re->num_rows>0){
 									echo '
@@ -245,7 +286,7 @@
 										echo "
 											<tr>
 												<td>{$i}</td>
-												<td>{$r["RNO"]}</td>
+												<td>{$r["REGNO"]}</td>
 												<td>{$r["CRNO"]}</td>
 												<td>{$r["NAME"]}</td>
 												<td>{$r["GEN"]}</td>
@@ -254,9 +295,9 @@
 												<td>{$r["MNAME"]}</td>
 												<td class='p-2'>{$r["PHO"]}</td>
 
-												<td>{$r["SCLASS"]}</td>
-												<td>{$r["SSEC"]}</td>
-												<td><img src='{$r["SIMG"]}' alt='S. Img' height='70' width='70' class='p-2' ></td>
+												<td>{$r["CLASS"]}</td>
+												<td>{$r["SEC"]}</td>
+												<td><img src='{$r["IMG"]}' alt='S. Img' height='70' width='70' class='p-2' ></td>
 
 										        <td> 
 										          <a href='change_pass.php?delid={$r["ID"]}' target='_blank' class='btn btn-danger '><i class='fas fa-trash-alt'></i></a>

@@ -5,14 +5,14 @@
 	// 	echo "<script>window.open('teacher_login.php?mes=Access Denied...','_self');</script>";
 	// }
 	if(isset($_GET["viewt"])){
-		$sql="select * from student where YEAR='{$_GET["year"]}' ";
+		$sql="select * from student where YEAR='{$_GET["years"]}' ";
 		$res=$db->query($sql);
 		if ($res->num_rows<=0) {
-			header("location:save_history.php?err=Invalid Register no..");
+			header("location:sbg_mark.php?err=Invalid Register no..");
 		}else{
 			$rows=$res->fetch_assoc();
 			$class=$rows["SCLASS"];
-			//$etype=$_GET["etype"];
+			$etype=$_GET["etype"];
 
 		}
 	}
@@ -30,9 +30,9 @@
 		<div class="row" id="vir">
 	<!-- Side bar Section On -->
 	<?php include "sidebar.php"; ?>
-    <!-- Side bar Section end-->
-    
-    <div class="col-md-9">
+			
+	<!-- Side bar Section end-->	
+			<div class="col-md-9">
 				<h2 class="text-light" >Welcome Admin </h2>
 				<div class="row">
 					<div class="col-md-12 fix"> 
@@ -43,7 +43,7 @@
 
 							if(isset($_GET['viewt'])){
 								echo "<h4>Student Info Table</h4><br>";
-								$sql="select * from student where YEAR='{$_GET["year"]}'  ";
+								$sql="select * from student where YEAR='{$_GET["years"]}'  ";
 								$re=$db->query($sql);
 								if($re->num_rows>0){
 									echo '
@@ -76,32 +76,38 @@
 								if ($reg->num_rows>0){
 										$r=$reg->fetch_assoc();
 										
-                                        $RNO=$r["RNO"];
-                                        $NAME=$r["NAME"];
-                                        $REL=$r["REL"];
-                                        $FNAME=$r["FNAME"];
-                                        $DOB=$r["DOB"];
-                                        $GEN=$r["GEN"];
-                                        $MAIL=$r["MAIL"];
-                                        $ADDR=$r["ADDR"];
-                                        $SCLASS=$r["SCLASS"];
-                                        $SSEC=$r["SSEC"];
-                                        $SIMG=$r["SIMG"];
-                                        $MNAME=$r["MNAME"];
-                                        $CRNO=$r["CRNO"];
-                                        $YEAR=$r["YEAR"];
-                                        $PASS=$r["PASS"];
-                                        $TID=$r["TID"];
-                                        $SN=$r["SN"];
-                                        $PHO=$r["PHO"];
-                                        
+										$regno=$r["RNO"];
+										$name=$r["NAME"];
+										$img=$r["SIMG"];
+										$roll=$r["CRNO"];
+										$sec=$r["SSEC"];
+										$cl=$r["SCLASS"];
+
+										$rel=$r["REL"];
+										$fname=$r["FNAME"];
+										$mname=$r["MNAME"];
+										$dob=$r["DOB"];
+										$gen=$r["GEN"];
+										$year=$r["YEAR"];
+										$phone=$r["PHO"];
+
+										$mail=$r["MAIL"];
+										$add=$r["ADDR"];
+										$pass=$r["PASS"];
+										$tid=$r["TID"];
+
 									}
+
+									// $marks = $_POST['marks'];
+									// $smarks = $_POST['smarks']; $etype = $_POST['etype'];
+									// $sub = $_POST['sub'];
+									// $tu_sub = $_POST['tu_sub']; ,BTU,BAN,ETU,ENG,MTU,MAT,STU,SCI,SOTU,SOC,RTU,REL,ATU,AGR,ICT
+									$etype=$_GET["etype"];
 									
 									
-									
-							$result = mysqli_query($db,"INSERT INTO history (RNO,NAME,REL,FNAME,DOB,GEN,MAIL,ADDR,SCLASS,SSEC,SIMG,MNAME,CRNO,YEAR,PASS,TID,SN,PHO) VALUES('$RNO','$NAME','$REL','$FNAME','$DOB','$GEN','$MAIL','$ADDR','$SCLASS','$SSEC','$SIMG','$MNAME','$CRNO','$YEAR','$PASS','$TID','$SN','$PHO')");
+							$result = mysqli_query($db,"INSERT INTO history (REGNO,NAME,IMG,TERM,CLASS,CRNO,SEC,  REL,FNAME,DOB,GEN,MNAME,YE,PHO,  MAIL,ADDR,PASS,TID) VALUES('$regno','$name','$img','$etype','$cl','$roll','$sec',  '$rel','$fname','$dob','$gen','$mname','$year','$phone',  '$mail','$add','$pass','$tid')");
 							if($result){
-								echo "<h4 class='m-2 p-2 text-light bg-success'>All Student Save History</h4>";
+								echo "<h4 class='m-2 p-2 text-light bg-success'>Save ok $year </h4>";
 							}else{
 								echo "<h4 class='p-2 text-light bg-danger'>Insert Failed</h4>";
 							}

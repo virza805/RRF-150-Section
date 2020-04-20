@@ -52,10 +52,10 @@
           });
           // flip box section 84
         $('.hover').hover(function(){
-			$(this).addClass('flip');
-		},function(){
-			$(this).removeClass('flip');
-		});
+        $(this).addClass('flip');
+          },function(){
+            $(this).removeClass('flip');
+        });
 
     });
 
