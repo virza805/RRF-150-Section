@@ -114,7 +114,7 @@ div#logo span {
                 <h5 class="text-danger">Section : <b class="text-success"><?php echo $_GET["sec"] ?></b></h5>
             </div>
             <div class="col-md-4">
-                <h5 class="text-danger">Month : <b class="text-success"><?php echo $_GET["month"] ?>- 2019</b></h5>
+                <h5 class="text-danger">Month : <b class="text-success"><?php echo $_GET["month"] ?></b></h5>
             </div>
         </div>
         <div class="container_full">
@@ -167,7 +167,7 @@ div#logo span {
                         </thead>
                         <tbody>
 							<?php 
-								$s="select * from student where SCLASS='{$_GET["cla"]}' and SSEC='{$_GET["sec"]}' ";
+								$s="select * from student where SCLASS='{$_GET["cla"]}' and SSEC='{$_GET["sec"]}' order by CRNO asc ";
 								$res=$db->query($s);
 								if($res->num_rows>0){
 									$i=0;

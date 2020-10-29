@@ -5,7 +5,7 @@
 		echo "Failed";
 	}
 
-	//  	$db=new mysqli('localhost','growonline_vir','Virza805@','growonline_vir');
+	//  	$db=new mysqli('localhost','pkleauia_vir','Tanvir12@#','pkleauia_vir');
 	//  if (!$db) {
 	//  	echo "Failed";
 	//  }

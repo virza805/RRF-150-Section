@@ -10,32 +10,7 @@
 	}
  ?>
 <?php include "teacher_header.php"; ?>
-<!--end menu Section -->
-<div class="container_full bg-light slid_img">
-	<div class="container text-center">
-		<div class="row">
-			<div class="col-md-8">
-			<h2 class="mt-5 text-light" ><i><b>Wellcome To<br>
-				MILLENNIUM ACADEMIC SCHOOL</b></i></h2>
-		
-			</div>
-			<div class="col-md-4">
-			<?php 
-			$sql="SELECT * FROM staff WHERE TID={$_SESSION["TID"]}";
-			$res=$db->query($sql);
-		
-			if($res->num_rows>0){
-				$row=$res->fetch_assoc();
-			
-			?>
-			<h5><?php echo $row['DGN'] ?></h5>
-				<img colspan="2" src="<?php echo $row['IMG'] ?>" height="150" width="150" alt="Upload Pending">
-			<h5><?php echo $row['TNAME'] ?></h5>
-			<?php }?>
-			</div>
-		</div>
-	</div>
-</div>
+
 <!-- Banar Section Off loge_bk bg-light -->
 
 <div class="container_full loge_bk " style ='margin-top: 0px;'>
@@ -121,7 +96,7 @@
 							
 							
 						</table>
-						<h2><a  class=" text-light " href="save_history_add_stud.php">Test History Databas insert</a></h2>
+						
 					</div>
 				</div>
 				

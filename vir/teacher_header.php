@@ -69,3 +69,28 @@
 		</div>
 	</div>
 <!--end menu Section -->
+<!--end menu Section -->
+<div class="container_full dream_img slid_img">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-8">
+			<h2 class="mt-5 text-light" ><i><b>Wellcome To School Management System</b></i></h2>
+		
+			</div>
+			<div class="col-md-4">
+			<?php 
+			$sql="SELECT * FROM staff WHERE TID={$_SESSION["TID"]}";
+			$res=$db->query($sql);
+		
+			if($res->num_rows>0){
+				$row=$res->fetch_assoc();
+			
+			?>
+			<h5 class="text-light"><?php echo $row['DGN'] ?></h5>
+				<img colspan="2" src="<?php echo $row['IMG'] ?>" height="150" width="150" alt="Upload Pending">
+			<h4 class="text-light"><?php echo $row['TNAME'] ?></h4>
+			<?php }?>
+			</div>
+		</div>
+	</div>
+</div>

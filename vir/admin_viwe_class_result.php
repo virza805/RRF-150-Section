@@ -40,7 +40,7 @@ include 'lib/Database.php';
     		<th class="text-center" colspan="2">Science</th>
     		<th class="text-center" colspan="2">S. Science</th>
     		<th class="text-center" colspan="2">Religion</th>
-    		<th class="text-center" colspan="2">Agriculture</th>
+    		<th class="text-center" colspan="2">InputMark</th>
     		<th>ICI</th>
     		<th class="text-center" colspan="2"></th>
     	</tr>
@@ -62,8 +62,8 @@ include 'lib/Database.php';
 		<th class="p-2">SOC</th>
 		<th class="p-2">RTU</th>
 		<th class="p-2">REL</th>
-		<th class="p-2">ATU</th>
-		<th class="p-2">AGR</th>
+		<th class="p-2">TU</th>
+		<th class="p-2">Sem.</th>
 		<th class="p-2">ICT</th>
         <th class="text-center" colspan="2">Action</th>
         
@@ -110,12 +110,14 @@ if($view){
         <td><?php echo $result['SOC'] ?></td>
         <td><?php echo $result['RTU'] ?></td>
         <td><?php echo $result['REL'] ?></td>
-        <td><?php echo $result['ATU'] ?></td>
-        <td><?php echo $result['AGR'] ?></td>
+
+        <td><a href="admin_edit_tu_mark.php?editid=<?php echo $result['SMID'] ?>" target='_blank' class='text-success '><i class='fas fa-pencil-alt'></i></a></td>
+        <td><a href="admin_edit_semester_mark.php?editid=<?php echo $result['SMID'] ?>" target='_blank' class='text-success '><i class='fas fa-graduation-cap'></i></a></td>
+
         <td><?php echo $result['ICT'] ?></td>
 
         <td> <!--admin_viwe_class_result.php  admin_edit_viwe_result.php-->
-          <a href="admin_viwe_class_result.php?delid=<?php echo $result['SMID'] ?>" target='_blank' class='btn btn-danger '>Delat</a>
+          <a href="admin_viwe_class_result.php?delid=<?php echo $result['SMID'] ?>" target='_blank' class='btn btn-danger '><i class="fas fa-trash-alt"></i></a>
         </td>
 
         <td>

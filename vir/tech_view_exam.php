@@ -12,12 +12,7 @@
 	}
  ?> 
 <?php include "teacher_header.php"; ?>
-<!--end menu Section -->
-<div class="container_full slid_img">
-	<div class="container">
-		<h1 class="text text-center">Wellcome To School Management System <br> For Teacher</h1>
-	</div>
-</div>
+
 <!-- Banar Section Off loge_bk bg-light  d_back -->
 
 <div class="container_full  d_back " style ='margin-top: 0px;'>

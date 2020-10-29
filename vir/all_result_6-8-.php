@@ -1725,7 +1725,7 @@ div#logo span {
 
 	 	 <!-- <img src="img/qr_tanvir.png" class="img-thumbnail float-right mt-2" alt="Trulli" width="200" height="200">  -->
 
-		 <?php include "all_qr.php"; ?>
+		 <?php  include "all_qr.php"; ?>
 
 	 </div>
 

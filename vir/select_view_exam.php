@@ -104,12 +104,12 @@
 							<th>Exam Name</th>
 							<td><select type="text" name="ety" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(TERM) from smark ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["TERM"]}'>{$ro["TERM"]}</option>";
 								}
 							}
 

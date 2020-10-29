@@ -10,7 +10,7 @@ $file = $path.uniqid().".png";
         
         $text = $rows["NAME"]."; "."Class = ".$rows["CLASS"] ." and roll = ".$rows["CRNO"];
      
-      $text .= ", Exam = ". $etype;
+      $text .= ", Exam = ". $_GET["etype"];
       $text .= ", Totall Mark = ".$total;
       $text .= " & GPA = ". substr($g_point,0,4);
 //$qr_grad = include "qr_grade.php";

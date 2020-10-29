@@ -21,7 +21,7 @@
 				<h2 class="text-light">Welcome </h2>
 				<div class="row">
 					<div class="col-md-12 fix"> 
-						<h4><b class="text-info">View / Edit Class Exam makr</b></h4>
+						<h4><b class="text-info">View / Edit Class Exam Mark </b></h4>
 						
 						  <?php 
 						  	if(isset($_GET["err"])){
@@ -49,12 +49,12 @@
 							  <br>
 							<select type="text" name="etype" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(TERM) from smark ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["TERM"]}'>{$ro["TERM"]}</option>";
 								}
 							}
 
@@ -125,12 +125,12 @@
 							 <br>
 							<select type="text" name="etype" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(TERM) from smark ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["TERM"]}'>{$ro["TERM"]}</option>";
 								}
 							}
 
@@ -188,12 +188,12 @@
 							 <br>
 							<select type="text" name="etype" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(TERM) from smark ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["TERM"]}'>{$ro["TERM"]}</option>";
 								}
 							}
 
@@ -252,12 +252,12 @@
 							 <br>
 							<select type="text" name="etype" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(TERM) from smark ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["TERM"]}'>{$ro["TERM"]}</option>";
 								}
 							}
 
@@ -315,12 +315,12 @@
 							 <br>
 							<select type="text" name="etype" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(TERM) from smark ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["TERM"]}'>{$ro["TERM"]}</option>";
 								}
 							}
 
@@ -379,12 +379,12 @@
 							 <br>
 							<select type="text" name="etype" required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(TERM) from smark ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["TERM"]}'>{$ro["TERM"]}</option>";
 								}
 							}
 

@@ -136,116 +136,116 @@ h6, p{
 											<td class="text-left"><?php echo $rows['NAME'] ?></td>
         <?php 
 
-        $btu =  $rows['BTU'];
-        $bob_wr=$rows['BOB']+$rows['BAN'];
-        $ban = $bob_wr*0.7;
-        $tuban = $btu+round($ban);
-        $avg = $tuban;
-        $point=$tuban;
-        $bpoi = include "point.php";
-        $bpoi =$get_point ;
+        // $btu =  $rows['BTU'];
+        // $bob_wr=$rows['BOB']+$rows['BAN'];
+        // $ban = $bob_wr*0.7;
+        // $tuban = $btu+round($ban);
+        // $avg = $tuban;
+        // $point=$tuban;
+        // $bpoi = include "point.php";
+        // $bpoi =$get_point ;
 
       ?>
       
-      <td><?php  echo $tuban ?></td>
+      <td><?php // echo $tuban ?></td>
       
       <!-- End Bangla 1st -->
       <?php 
-        $etu =  $rows['ETU'];
-        $eob_wr=$rows['ENG'];
-        $eng = $eob_wr*0.7;
-        $tueng = $etu+round($eng);
-        $avg = $tueng;
-        $point=$tueng;
-        $epoi = include "point.php";
-        $epoi = $get_point;
+        // $etu =  $rows['ETU'];
+        // $eob_wr=$rows['ENG'];
+        // $eng = $eob_wr*0.7;
+        // $tueng = $etu+round($eng);
+        // $avg = $tueng;
+        // $point=$tueng;
+        // $epoi = include "point.php";
+        // $epoi = $get_point;
         
       ?>
       
-      <td><?php  echo $tueng ?></td>
+      <td><?php // echo $tueng ?></td>
       <!-- end Enaglish 1st -->
       <?php 
 
-        $edtu =  $rows['EDTU'];
-        $edan = $rows['ED']*0.7;
-        $tuen = $edtu+round($edan);
-        $avg = $tuen;
-        $point=$tuen;
-        $edpoi = include "point.php";
-        $edpoi =$get_point ;
+        // $edtu =  $rows['EDTU'];
+        // $edan = $rows['ED']*0.7;
+        // $tuen = $edtu+round($edan);
+        // $avg = $tuen;
+        // $point=$tuen;
+        // $edpoi = include "point.php";
+        // $edpoi =$get_point ;
 
       ?>
-      <td><?php  echo $tuen ?></td>
+      <td><?php // echo $tuen ?></td>
       <?php 
-        $mtu =  $rows['MTU'];
-        $mob_wr=$rows['MOB']+$rows['MAT'];
-        $mat = $mob_wr*0.7;
-        $tumat = $mtu+round($mat);
-        $avg = $tumat;
-        $point=$tumat;
-        $mpoi = include "point.php";
-        $mpoi = $get_point;
+        // $mtu =  $rows['MTU'];
+        // $mob_wr=$rows['MOB']+$rows['MAT'];
+        // $mat = $mob_wr*0.7;
+        // $tumat = $mtu+round($mat);
+        // $avg = $tumat;
+        // $point=$tumat;
+        // $mpoi = include "point.php";
+        // $mpoi = $get_point;
       ?>
-      <td><?php  echo $tumat ?></td>
+      <td><?php // echo $tumat ?></td>
  <!-- Mathematics -->
       <?php 
-        $rtu =  $rows['RTU'];
-        $rob_wr=$rows['ROB']+$rows['REL'];
-        $rel = $rob_wr*0.7;
-        $turel = $rtu+round($rel);
-        $avg = $turel;
-        $point=$turel;
-        $rpoi = include "point.php";
-        $rpoi = $get_point;
+        // $rtu =  $rows['RTU'];
+        // $rob_wr=$rows['ROB']+$rows['REL'];
+        // $rel = $rob_wr*0.7;
+        // $turel = $rtu+round($rel);
+        // $avg = $turel;
+        // $point=$turel;
+        // $rpoi = include "point.php";
+        // $rpoi = $get_point;
       ?>
-      <td><?php  echo $turel ?></td>
+      <td><?php // echo $turel ?></td>
 <!-- Religion & Moral Edu. -->
 <!-- General Science -->
         <?php 
-        $sotu =  $rows['SOTU'];
-        $acob_wr=$rows['SOB']+$rows['SOC'];
-        $acc = $acob_wr*0.7;
-        $tuacc = $sotu+round($acc);
-        $avg = $tuacc;
-        $point=$tuacc;
-        $acpoi = include "point.php";
-        $acpoi = $get_point;
+        // $sotu =  $rows['SOTU'];
+        // $acob_wr=$rows['SOB']+$rows['SOC'];
+        // $acc = $acob_wr*0.7;
+        // $tuacc = $sotu+round($acc);
+        // $avg = $tuacc;
+        // $point=$tuacc;
+        // $acpoi = include "point.php";
+        // $acpoi = $get_point;
         ?>
-      <td><?php  echo $tuacc ?></td>
+      <td><?php // echo $tuacc ?></td>
 <!-- BD & Glob. Studies -->
       <?php 
-        $atu =  $rows['ATU'];
-        $aob_wr=$rows['AOB']+$rows['AGR'];
-        $agr = $aob_wr*0.7;
-        //$tuagr = $atu+round($agr)+$rows['AGK'];
-        $tuagr = $rows['AGK'];
-        $avg = $tuagr*2;
-        $point=$tuagr*2;
-        $apoi = include "point.php";
-        $apoi = $get_point;
+        // $atu =  $rows['ATU'];
+        // $aob_wr=$rows['AOB']+$rows['AGR'];
+        // $agr = $aob_wr*0.7;
+        // //$tuagr = $atu+round($agr)+$rows['AGK'];
+        // $tuagr = $rows['AGK'];
+        // $avg = $tuagr*2;
+        // $point=$tuagr*2;
+        // $apoi = include "point.php";
+        // $apoi = $get_point;
      ?>
-        <td><?php  echo $tuagr ?></td>
+        <td><?php // echo $tuagr ?></td>
 <!-- Drawing & Hand Writing -->    
       <?php 
-       $total = $tuban+$tueng+$tuen+$tumat+$turel+$tuacc+$tuagr;
-       $svg = $total/7;
-       $total_point = $bpoi+$epoi+$edpoi+$mpoi+$rpoi+$acpoi+$apoi;
+      //  $total = $tuban+$tueng+$tuen+$tumat+$turel+$tuacc+$tuagr;
+      //  $svg = $total/7;
+      //  $total_point = $bpoi+$epoi+$edpoi+$mpoi+$rpoi+$acpoi+$apoi;
        
-       $gpoint =$total_point/7;
+      //  $gpoint =$total_point/7;
  
-       $gpoint = include "search_fall_1-2.php";
+      //  $gpoint = include "search_fall_1-2.php";
  
-        $gret = $g_point;
+      //   $gret = $g_point;
        ?>
-      <th><?php echo $total ?></th>
-      <th><?php include "totall_grate.php"; ?></th>
+      <th><?php // echo $total ?></th>
+      <th><?php // include "totall_grate.php"; ?></th>
       <!-- End Total Number & Grade -->
       <th>
        <?php 
-       $gpoint =$total_point/7;
+      //  $gpoint =$total_point/7;
 
-       $gpoint = include "search_fall_1-2.php";
-      echo substr($g_point,0,4); 
+      //  $gpoint = include "search_fall_1-2.php";
+      // echo substr($g_point,0,4); 
         ?>
       </th>
       <td></td>

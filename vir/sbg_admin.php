@@ -48,12 +48,12 @@
 							  <br>
 							<select type="text" name="etype" " required class="input form-control"> <br>
 							<?php  
-							$sl="select DISTINCT(ETYPE) from exam ";
+							$sl="select DISTINCT(ENAME) from lexam ";
 							$r=$db->query($sl);
 							if($r->num_rows>0){
 								echo "<option value=''>Type sleet Term</option>";
 								while($ro=$r->fetch_assoc()){
-									echo "<option value='{$ro["ETYPE"]}'>{$ro["ETYPE"]}</option>";
+									echo "<option value='{$ro["ENAME"]}'>{$ro["ENAME"]}</option>";
 								}
 							}
 
@@ -67,6 +67,26 @@
 						</form>  <br>
 						
 								
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<h4><b class="text-info">One Student Permission to Teacher for input  Mark</b></h4>
+						
+							<?php 
+								if(isset($_GET["err"])){
+									echo "<div class='alert alert-danger'>{$_GET["err"]}</div>";
+								}
+						   ?>
+						<form  role="form" method="get" action="admin_par_1_add_mark.php"><br>
+							
+							<input type="text" name="rno" placeholder="Enter Roll No" required class="input form-control"><br>
+							
+							
+							<button type="submit" class="btn btn-success" name="viewt">View Details </button> <br><br>
+						</form>  <br>
+
 					</div>
 				</div>
 				

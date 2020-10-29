@@ -1,0 +1,736 @@
+/**
+ Theme Name: Test Task
+ Author: Tanvir Md. Al-Amin
+ Version: 1.0.0
+*/
+
+/*--------------------------------------------------------------
+>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1. Font Awesome
+2. Normalize
+3. Clearings
+4. Header
+    *Main Menu
+5. Home Page
+    *Hero Section
+    *Brand LOGO
+    *Youtube video aria
+    *Graph Chart Section
+    *Pricing Plan Section
+15. Site Footer
+16. Responsive
+--------------------------------------------------------------*/
+
+/*------------------------------------------------------------
+1. Font Awesome
+!
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * ----------------------------------------------------------- */
+ @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+/*--------------------------------------------------------------
+2. Normalize
+--------------------------------------------------------------*/
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.714;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.714;
+    color: #626262;
+    margin: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+figcaption, figure, main {
+    display: block;
+}
+figure {
+    margin: 1em 0;
+}
+hr {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+pre {
+    font-family: monospace, monospace;
+    font-size: 15px;
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:active, a:hover {
+    outline-width: 0;
+}
+abbr[title] {
+    border-bottom: 1px #767676 dotted;
+    text-decoration: none;
+}
+b, strong {
+    font-weight: inherit;
+    font-weight: bold;
+}
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: 15px;
+}
+dfn, cite, em, i {
+    font-style: italic;
+}
+mark, ins {
+    background-color: #fbfb01;
+    color: #505050;
+}
+small {
+    font-size: 80%;
+}
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -4px;
+}
+sup {
+    top: -8px;
+}
+audio, canvas, progress, video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+img {
+    border-style: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+button, input, optgroup, select, textarea {
+    display: block;
+    font-size: 100%;
+    line-height: 25px;
+    margin: 0;
+}
+button, input {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+    outline: none;
+}
+fieldset {
+    border: none;
+    margin: 0 5px;
+    padding: 0;
+}
+legend {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+}
+[type="checkbox"], [type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+details, menu {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+canvas {
+    display: inline-block;
+}
+template {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0 0 15px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+}
+a:focus{
+    outline: 0 solid;
+}
+input:focus, a:focus,button:focus,textarea:focus{
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+/*--------------------------------------------------------------
+3. Clearings
+--------------------------------------------------------------*/
+.clear:before, .clear:after, .entry-content:before, .entry-content:after, .entry-footer:before, .entry-footer:after, .comment-content:before, .comment-content:after, .site-header:before, .site-header:after, .site-content:before, .site-content:after, .site-footer:before, .site-footer:after, .comment-author:before, .comment-author:after, .widget-area:before, .widget-area:after, .widget:before, .widget:after, .comment-meta:before, .comment-meta:after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+.clear:after, .entry-content:after, .entry-footer:after, .comment-content:after, .site-header:after, .site-content:after, .site-footer:after, .comment-author:after, .widget-area:after, .widget:after, .comment-meta:after {
+    clear: both;
+}
+/*--------------------------------------------------------------
+4. Home Page
+--------------------------------------------------------------*/
+
+/* Main Menu Start Now */
+a.button-fill {
+    background: #0065F2;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.main-menu-nev {
+    position: fixed;
+    width: 100%;
+}
+header {
+    margin: 10px;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+}
+.button-fill.text-dark{
+    display: none;
+}
+nav.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav.menu ul li {
+    display: inline-block;
+    padding: 0px 12px;
+}
+
+nav.menu ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* Main Menu End */
+/* Hero Section Start Now */
+.slider h2 {
+    font-size: 53px;
+    font-weight: 700;
+    color: #000;
+}
+.slider p {
+    padding: 10px 30px;
+    font-size: 19px;
+    color: #000;
+}
+
+.slider a.button-fill {
+    background: #0065f2;
+    padding: 10px 35px;
+    color: #fff;
+    margin-top: 25px;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.slider {
+    margin: 92px 0;
+}
+
+/* Hero Section End */
+/* Start Brand LOGO Start */
+.brand-images {
+    margin: 45px 0px;
+    text-align: center;
+}
+.brand-images img{
+    margin:0px 8px 0px 8px;
+    text-align: center;
+    height: 30px;
+    padding: 0 18px;
+}
+.brand-images .owl-item img {
+    display: block;
+    width: 100%;
+    padding-left: 50px;
+}
+.brand-logo p {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+/* Start Brand LOGO End */
+
+/* Start Youtube video aria */
+.youtube-aria p {
+    color: #000;
+    font-size: 18px;
+    padding: 15px 0;
+}
+a.link {
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+a.link i.fa {
+    position: absolute;
+    right: -18px;
+    top: 5px;
+    font-size: 18px;
+}
+.video-play-btn{
+    display: block;
+    background-size: 115%;
+    background-position:center;
+    background-color: #333;
+    height: 350px;
+    display:table;
+    width:100%;
+    color:#fff;
+    transition:.3s;
+}
+.video-play-btn:hover{
+    color:#fff;
+    background-size: 125%;
+}
+.video-overlay{
+    display:table-cell;
+    vertical-align: middle;
+    text-align:center;
+    padding:50px;
+    font-size: 65px;
+    position: relative;
+    z-index: 1;
+    transform:scale(.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.video-play-btn:hover .video-overlay{
+    transform:scale(1);
+    opacity: 1;
+    visibility:visible;
+}
+.video-overlay::after{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    background-color:#26395a;
+    z-index: -1;
+    opacity: .7;
+}
+p.youtube-after-heading {
+    font-size: 15px;
+    margin: 14px 0;
+}
+.video-overlap p.video-top-desc{
+    opacity: 1;
+}
+.video-overlap p{
+    opacity: .8;
+}
+/* End Youtube video aria */
+
+/* Start Graph Chart Section */
+.graph-chat {
+    padding: 90px 0;
+}
+
+.graph-chat-text h2 {
+    font-size: 40px;
+    color: #000;
+    font-weight: 900;
+}
+
+.graph-chat-text {
+    padding-left: 70px;
+}
+
+.graph-chat-text.graph-text-left {
+    padding-left: 0;
+    padding-right: 70px;
+}
+
+.graph-chat-text p {
+    font-size: 17px;
+    color: #000;
+}
+
+.box-content h5 {
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.box-content p {
+    font-size: 15px;
+}
+
+.box-content {
+    margin-top: 20px;
+}
+/* End Graph Chart Section */
+
+/* Start Pricing Plan Section */
+.price-duration ul li a {
+    color: #626262;
+    cursor: pointer;
+}
+
+.price-duration ul li.active a {
+    color: #0065F2;
+}
+
+.price-duration ul li.active {
+    position: relative;
+    z-index: 1;
+}
+
+.price-duration ul li.active::after {
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 100%;
+    height: 2px;
+    background: #0065F2;
+    content: "";
+}
+
+.pricing-title p {
+    color: #000;
+    font-weight: 600;
+}
+
+.pricing-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    padding: 0px 15px;
+    margin-bottom: 80px;
+}
+.price-duration ul li{
+    display: inline-block;
+    padding: 5px 25px;
+}
+.price-duration {
+    margin-bottom: 35px;
+}
+.pricing-plan{
+    margin: 50px 0;
+
+}
+.pricing-plan .pricing-title h2 span{
+    color: #05bd27;
+    font-weight: 700;
+}
+.single-pricing-box{
+    border: 1px solid #ddd;
+    padding: 22px;
+    padding-top: 35px;
+    text-align: center;
+}
+.single-pricing-box:hover{
+    border:#2fa55e;
+    box-shadow: 0 0 50px #ccc;
+    color: #2fa55e;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.single-pricing-box h3{
+   
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price, .p-year{
+    text-transform: none;
+    display: none;
+}
+.price.show, .p-year.show{
+    display: block;
+}
+.pricing-lists{
+    text-align: left;
+    margin-bottom: 23px;
+}
+.pricing-lists ul{
+    margin: 0;
+    padding: 0;
+    list-style:outside none none;
+    line-height: 25px;
+    height: 175px;
+}
+.pricing-lists ul li:before{
+    font-family: fontAwesome;
+    content: "\f111";
+    color: #000;
+    padding-right: 12px;
+    font-size: 7px;
+}
+.bordered-btn{
+    display: block;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    background: #0065F2;
+}
+.bordered-btn:hover{
+    display: block;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    background: #05bd27;
+}
+.single-pricing-box {
+    color: #000;
+}
+
+.single-pricing-box h6 {
+    font-weight: 600;
+}
+
+.pricing {
+    text-align: left;
+    font-weight: 400;
+    padding-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+p.price, p.p-year {
+    font-size: 18px;
+}
+
+p.price b, p.p-year b {
+    font-size: 56px;
+    font-weight: 900;
+    padding-right: 6px;
+}
+
+.pricing::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #dddddd;
+    width: 100%;
+    height: 1px;
+    content: "";
+}
+.pricing-lists ul li{
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.pricing-lists ul li :hover{
+    padding-left: 5px;
+}
+/* End Pricing Plan Section */
+.befor-foote-hading h3 {
+    font-weight: 700;
+    color: #000;
+}
+
+.befor-foote-hading {
+    padding: 30px 0;
+    margin-bottom: 40px;
+}
+/* Start Site Footer Section */
+
+.footer-menu ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.footer-menu li{
+    display: inline-block;
+}
+.footer-menu a{
+    padding-left: 20px;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+.social-link a{
+    padding-left: 10px;
+    color:#000;
+    cursor: pointer;
+}
+.footer-menu.copy-right ul li a {
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+}
+
+.footer-menu.copy-right {
+    margin: 40px 0;
+}
+a.footer-logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.social-link a {
+    font-size: 19px;
+}
+/* End Site Footer Section */
+
+/*
+===================
+For responsive CSS3 Start Now >--->
+===================
+*/
+/* Medium Layout 1280px */
+@media only screen and (min-width:992px) and (max-width:1200px){
+    
+}
+/*  Tablet Layout: 768px */
+@media only screen and (min-width:768px) and (max-width:991px){
+    
+}
+/* Mobile Layout 320px */
+@media only screen and (max-width:767px){
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburger{
+        display: block;
+    }
+    .p-relative{
+        position: relative;
+        z-index: 1;
+    }
+    .logo-p{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+    .button-fill{
+        display: none;
+    }
+    .button-fill.text-dark{
+        display: inline-block;
+        background: none;
+    }
+    .main-menu-nev {
+        background: rgba(2, 30, 61, 0.459);
+        padding: 10px 5px;
+        z-index: 9;
+    }
+    .main-menu-nev a {
+        color: #fff !important;
+    }
+    .main-menu li a{
+        padding:20px 0;
+        font-size: 11px;
+   }
+   .main-menu ul{
+       text-align: center;
+   }
+   
+    .social-link {
+        text-align: center;
+    }
+    a.footer-logo{
+        text-align: center;
+        padding-left: 42%;
+    }
+    .footer-menu ul {
+        margin: 30px 0;
+    }
+    .footer-menu li {
+        display: block;
+    }
+}
+/* Wide Mobile Layout 480px */
+@media only screen and (min-width:480px) and (max-width:766px){} 
+
+/*
+===================
+<---End---> responsive CSS3 
+===================
+*/

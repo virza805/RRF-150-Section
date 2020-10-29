@@ -134,7 +134,7 @@ div#logo span {
                         </thead>
                         <tbody>
 							<?php 
-								$s="select * from student where SCLASS='{$_GET["cla"]}' and SSEC='{$_GET["sec"]}' ";
+								$s="select * from student where SCLASS='{$_GET["cla"]}' and SSEC='{$_GET["sec"]}' order by CRNO asc ";
 								$res=$db->query($s);
 								if($res->num_rows>0){
 									$i=0;

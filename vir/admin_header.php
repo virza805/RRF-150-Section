@@ -21,16 +21,14 @@
 				<div id="logo_left">
 
 					<img src="img/vir.png" alt="Logo" width="" height="70px">
-					<!--
-					<h2 class="d-inline">
-						<span>T</span>
+					
+					<h2 class="d-inline " style="left:260px; top:40px;" >
 						<span>A</span>
-						<span>N</span>
-						<span>V</span>
+						<span>D</span>
+						<span>M</span>
 						<span>I</span>
-						<span>R</span>
+						<span>N</span>
 					</h2>
-					-->
 				</div>
 			</a>
 
@@ -70,8 +68,8 @@
 	</div>
 <!--end menu Section -->
 <!-- Slider images On -->	
-<div class="container_full admin_img">
+<!-- <div class="container_full admin_img">
 	<div class="container">
 		<h1 class="text text-center">Admin Home Page School <br> Management System</h1>
 	</div>
-</div>
+</div> -->
